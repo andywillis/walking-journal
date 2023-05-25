@@ -1,13 +1,49 @@
 .listContainer {
+
   display: flex;
+  flex-direction: column;
   flex: 1;
   padding: var(--box-padding);
   border: var(--box-border);
   border-radius: var(--box-border-radius);
+  
+  & header {
+    height: fit-content;
+    border: var(--box-border-medium);
+    border-radius: var(--box-border-inner-radius-top);
+    & h4 {
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0.25rem;
+    }
+  }
+
+  & .list {
+    display: flex;
+    flex-direction: column;
+  
+    & .item {
+      font-size: 0.9rem;
+      display: flex;
+      padding: var(--box-padding);
+
+      &:first-of-type {
+        margin-top: 0.2rem;
+      }
+
+      &:not(:first-of-type) {
+        margin: 0.1rem 0;
+      }
+      
+    }
+  
+  }
+
 }
 
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  .item:hover {
+    cursor: pointer;
+  }  
 }

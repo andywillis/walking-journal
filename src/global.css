@@ -4,39 +4,70 @@
 
   font-family: 'Arial', sans-serif;
   font-size: calc(12px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: dark light;
 
-  --quick-time: 0.3s;
+  --time-quick: 0.3s;
 
   --quick-theme-transition:
-    color var(--quick-time),
-    background-color var(--quick-time);
+    color var(--time-quick),
+    background-color var(--time-quick);
 
-  --light-gray: hsl(var(--gray-1-hsl));
-  --dark-gray: hsl(var(--gray-8-hsl));
+  --green-light: hsl(var(--green-0-hsl));
+  --green-medium: hsl(var(--green-4-hsl));
+  --green-dark: hsl(var(--green-8-hsl));
+
+  --blue-light: hsl(var(--blue-0-hsl));
+  --blue-medium: hsl(var(--blue-4-hsl));
+  --blue-dark: hsl(var(--blue-8-hsl));
+  
+  --gray-light: hsl(var(--gray-0-hsl));
+  --gray-medium: hsl(var(--gray-4-hsl));
+  --gray-dark: hsl(var(--gray-8-hsl));
+
   --box-highlight: hsl(var(--yellow-2-hsl));
-
   --box-padding: 0.25rem;
-  --box-border: 2px solid var(--dark-gray);
-  --box-border-radius: 5px;
-  --box-border-inner-radius: 0 0 calc(var(--border-radius) - 2px) calc(var(--border-radius) - 2px);
-
-  background-color: var(--light-gray);
-  color: var(--dark-gray);
+  --border-box-width: 2px;
+  --box-border-radius: 8px;
+  --box-border-inner-radius-top: calc(var(--box-border-radius) - 2px) calc(var(--box-border-radius) - 2px) 0 0;
 
   border-radius: var(--box-border-radius);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+}
+
+.light {
+
+  background-color: var(--gray-light);
+  color: var(--gray-dark);
+  transition: var(--quick-theme-transition);
+
+  --box-border-medium: var(--border-box-width) solid var(--blue-medium);
+  --box-border: var(--border-box-width) solid var(--gray-dark);
+  --negative-color: var(var(--gray-light));
+
+}
+
+.dark {
+
+  background-color: var(--gray-dark);
+  color: var(--gray-light);
+  transition: var(--quick-theme-transition);
+
+  --box-border-medium: var(--border-box-width) solid var(--blue-medium);
+  --box-border: var(--border-box-width) solid var(--gray-light);
+  --negative-color: var(--gray-dark);
 
 }
 
@@ -50,26 +81,19 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3.2rem;
   line-height: 1.1;
-}
-
-.light {
-  background-color: var(--light-gray);
-  color: var(--dark-gray);
-  transition: var(--quick-theme-transition);
-}
-
-.dark {
-  background-color: var(--dark-gray);
-  color: var(--light-gray);
-  transition: var(--quick-theme-transition);
-  --box-border: 2px solid var(--light-gray);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     composes: dark;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    composes: light;
   }
 }
 
