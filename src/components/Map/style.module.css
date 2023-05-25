@@ -1,5 +1,7 @@
 .map {
   display: flex;
   flex: 2;
-  background-color: white;
+  padding: var(--box-padding);
+  border: var(--box-border);
+  border-radius: var(--box-border-radius);
 }

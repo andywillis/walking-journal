@@ -2,8 +2,8 @@ import style from './style.module.css';
 
 function List() {
   return (
-    <section class={style.list}>
-      <ul>
+    <section class={style.listContainer}>
+      <ul class={style.list}>
         <li>Test</li>
       </ul>
     </section>

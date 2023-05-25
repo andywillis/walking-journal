@@ -1,5 +1,13 @@
-.list {
+.listContainer {
   display: flex;
   flex: 1;
-  background-color: white;
+  padding: var(--box-padding);
+  border: var(--box-border);
+  border-radius: var(--box-border-radius);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }

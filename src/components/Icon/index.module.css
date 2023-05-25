@@ -5,7 +5,7 @@
   width: 48px;
   aspect-ratio: 1;
   background-color: white;
-  border-radius: 5px;
+  border-radius: var(--box-border-radius);
   
   &:hover:not(:disabled) {
     cursor: pointer;

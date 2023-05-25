@@ -1,7 +1,5 @@
 import { render } from 'preact';
 
-import Layout from './layout';
+import App from './App';
 
-// import './global.css';
-
-render(<Layout />, document.body);
+render(<App />, document.body);

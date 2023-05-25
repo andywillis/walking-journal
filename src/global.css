@@ -2,7 +2,11 @@
 
 :root {
 
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  font-size: calc(12px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
   line-height: 1.5;
   font-weight: 400;
 
@@ -18,8 +22,15 @@
   --dark-gray: hsl(var(--gray-8-hsl));
   --box-highlight: hsl(var(--yellow-2-hsl));
 
+  --box-padding: 0.25rem;
+  --box-border: 2px solid var(--dark-gray);
+  --box-border-radius: 5px;
+  --box-border-inner-radius: 0 0 calc(var(--border-radius) - 2px) calc(var(--border-radius) - 2px);
+
   background-color: var(--light-gray);
   color: var(--dark-gray);
+
+  border-radius: var(--box-border-radius);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -53,12 +64,12 @@ h1 {
   background-color: var(--dark-gray);
   color: var(--light-gray);
   transition: var(--quick-theme-transition);
+  --box-border: 2px solid var(--light-gray);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    background-color: var(--dark-gray);
-    color: var(--light-gray);
+    composes: dark;
   }
 }
 
