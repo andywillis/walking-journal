@@ -1,19 +1,6 @@
-# Crossword Wrangler
+# Walking Map
 
-## About
-
-A small app to display ES crosswords reworked from my original[`crossword-wrangler`](https://github.com/andywillis/crossword-wrangler-rework)
-
-![Crossword screenshot](https://github.com/andywillis/crossword-wrangler-rework/blob/main/documentation/crossword_screenshot.png)
-
-## Considerations
-
-- Improved mobile experience
-- Preact over React
-- Signals over Redux
-- Functionality to complete the crossword rather than print it
-- Better backend architecture (possibly using couchdb)
-- PWA (possibly using pouchdb)
+Walking map.
 
 ## Licence
 
