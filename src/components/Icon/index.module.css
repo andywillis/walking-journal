@@ -1,0 +1,33 @@
+.icon {
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 48px;
+  aspect-ratio: 1;
+  background-color: white;
+  border-radius: 5px;
+  
+  &:hover:not(:disabled) {
+    cursor: pointer;
+    background-color: var(--box-highlight);
+  }
+  
+  &:disabled {
+    opacity: 0.2;
+  }
+  
+  &:not(:first-child) {
+    margin-left: 0.25rem;
+  }
+
+}
+
+.light {
+  composes: icon;
+  background-image: url('../../assets/sun.png');
+}
+
+.dark {
+  composes: icon;
+  background-image: url('../../assets/moon.png');
+}

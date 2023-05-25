@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  height: 70px;
+  & h1 {
+    margin: 0;
+  }
+  & .icons {
+    margin-left: auto;
+    align-self: center;
+  }
+}
