@@ -16,17 +16,26 @@
     color var(--time-quick),
     background-color var(--time-quick);
 
-  --green-light: hsl(var(--green-0-hsl));
-  --green-medium: hsl(var(--green-4-hsl));
-  --green-dark: hsl(var(--green-8-hsl));
+  --green-0: hsl(var(--green-0-hsl));
+  --green-1: hsl(var(--green-1-hsl));
+  --green-2: hsl(var(--green-2-hsl));
+  --green-4: hsl(var(--green-4-hsl));
+  --green-6: hsl(var(--green-6-hsl));
+  --green-8: hsl(var(--green-8-hsl));
 
-  --blue-light: hsl(var(--blue-0-hsl));
-  --blue-medium: hsl(var(--blue-4-hsl));
-  --blue-dark: hsl(var(--blue-8-hsl));
+  --blue-0: hsl(var(--blue-0-hsl));
+  --blue-1: hsl(var(--blue-1-hsl));
+  --blue-2: hsl(var(--blue-2-hsl));
+  --blue-4: hsl(var(--blue-4-hsl));
+  --blue-6: hsl(var(--blue-6-hsl));
+  --blue-8: hsl(var(--blue-8-hsl));
   
-  --gray-light: hsl(var(--gray-0-hsl));
-  --gray-medium: hsl(var(--gray-4-hsl));
-  --gray-dark: hsl(var(--gray-8-hsl));
+  --gray-0: hsl(var(--gray-0-hsl));
+  --gray-1: hsl(var(--gray-1-hsl));
+  --gray-2: hsl(var(--gray-2-hsl));
+  --gray-4: hsl(var(--gray-4-hsl));
+  --gray-6: hsl(var(--gray-6-hsl));
+  --gray-8: hsl(var(--gray-8-hsl));
 
   --box-highlight: hsl(var(--yellow-2-hsl));
   --box-padding: 0.25rem;
@@ -49,25 +58,36 @@
 
 .light {
 
-  background-color: var(--gray-light);
-  color: var(--gray-dark);
+  background-color: var(--gray-0);
+  color: var(--gray-8);
   transition: var(--quick-theme-transition);
 
-  --box-border-medium: var(--border-box-width) solid var(--blue-medium);
-  --box-border: var(--border-box-width) solid var(--gray-dark);
-  --negative-color: var(var(--gray-light));
+  --box-border-medium: var(--border-box-width) solid var(--blue-4);
+  --box-border: var(--border-box-width) solid var(--gray-8);
+  --negative-color: var(var(--gray-0));
+
+  --button-background-color: var(--gray-1);
+  --button-text-color: var(--gray-8);
+
+  --button-background-negative-color: var(--blue-8);
+  --button-text-negative-color: var(--gray-1);
 
 }
 
 .dark {
 
-  background-color: var(--gray-dark);
-  color: var(--gray-light);
+  background-color: var(--gray-8);
+  color: var(--gray-0);
   transition: var(--quick-theme-transition);
 
-  --box-border-medium: var(--border-box-width) solid var(--blue-medium);
-  --box-border: var(--border-box-width) solid var(--gray-light);
-  --negative-color: var(--gray-dark);
+  --box-border-medium: var(--border-box-width) solid var(--blue-4);
+  --box-border: var(--border-box-width) solid var(--gray-0);
+
+  --button-background-color: var(--gray-1);
+  --button-text-color: var(--gray-8);
+
+  --button-background-negative-color: var(--blue-8);
+  --button-text-negative-color: var(--gray-1);
 
 }
 
