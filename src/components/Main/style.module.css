@@ -4,3 +4,13 @@
   flex: 1;
   gap: 0.5rem;
 }
+
+/* Mobile */
+@media (max-width: 700px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {}

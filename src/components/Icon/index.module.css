@@ -24,10 +24,10 @@
 
 .light {
   composes: icon;
-  background-image: url('../../assets/sun.png');
+  background-image: url('../../assets/images/sun.png');
 }
 
 .dark {
   composes: icon;
-  background-image: url('../../assets/moon.png');
+  background-image: url('../../assets/images/moon.png');
 }

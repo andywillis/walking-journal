@@ -1,4 +1,7 @@
 import { signal } from '@preact/signals';
 
-// eslint-disable-next-line import/prefer-default-export
+import data from '../data/geodata.json';
+
 export const darkMode = signal(false);
+
+export const geoData = signal(data);

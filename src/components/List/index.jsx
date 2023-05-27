@@ -1,9 +1,22 @@
 import style from './style.module.css';
 
-const walks = [
-  { id: 1, name: 'Home to the Bay', distance: 4, unit: 'miles' },
-  { id: 2, name: 'The Circuit', distance: 1.25, unit: 'miles' }
-];
+import { geoData } from '../../store';
+
+// const walks = [
+//   { id: 1, name: 'Home to the Bay', distance: 4, unit: 'miles' },
+//   { id: 2, name: 'The Circuit', distance: 1.25, unit: 'miles' }
+// ];
+
+const walkNames = geoData.value.features.map(feature => {
+  const { id, name } = feature.properties;
+  return { id, name };
+});
+
+// function handleClick() {
+//   const newData = { ...geoData.value };
+//   newData.geometry.coordinates[0][0] = 1.2;
+//   geoData.value = newData;
+// }
 
 function List() {
   return (
@@ -12,13 +25,14 @@ function List() {
         <h4>List of walks</h4>
       </header>
       <section class={style.list}>
-        {walks.map(walk => {
+        {walkNames.map(walk => {
           return (
             <button
+              key={walk.id}
               type="button"
               class={style.item}
-              key={walk.id}
-            >{walk.name}
+              // onClick={handleClick}
+            >{walk.id}: {walk.name}
             </button>
           );
         })}
