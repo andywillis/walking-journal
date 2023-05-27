@@ -1,22 +1,11 @@
+import classNames from 'classnames';
 import style from './style.module.css';
 
-import { geoData } from '../../store';
+import { walks, currentWalk } from '../../store';
 
-// const walks = [
-//   { id: 1, name: 'Home to the Bay', distance: 4, unit: 'miles' },
-//   { id: 2, name: 'The Circuit', distance: 1.25, unit: 'miles' }
-// ];
-
-const walkNames = geoData.value.features.map(feature => {
-  const { id, name } = feature.properties;
-  return { id, name };
-});
-
-// function handleClick() {
-//   const newData = { ...geoData.value };
-//   newData.geometry.coordinates[0][0] = 1.2;
-//   geoData.value = newData;
-// }
+function handleClick(id) {
+  currentWalk.value = Number(id);
+}
 
 function List() {
   return (
@@ -25,14 +14,22 @@ function List() {
         <h4>List of walks</h4>
       </header>
       <section class={style.list}>
-        {walkNames.map(walk => {
+        {walks.value.map(walk => {
+
+          const { id, name } = walk;
+
+          const walkCn = classNames({
+            [style.item]: true,
+            [style.highlighted]: id === currentWalk.value
+          });
+
           return (
             <button
-              key={walk.id}
+              key={id}
               type="button"
-              class={style.item}
-              // onClick={handleClick}
-            >{walk.id}: {walk.name}
+              class={walkCn}
+              onClick={() => handleClick(id)}
+            >{id}: {name}
             </button>
           );
         })}

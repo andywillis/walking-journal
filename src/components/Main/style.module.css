@@ -1,6 +1,6 @@
 .main {
   display: flex;
-  height: 100%;
+  min-height: 70vh;
   flex: 1;
   gap: 0.5rem;
 }

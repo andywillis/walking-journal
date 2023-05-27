@@ -54,13 +54,15 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
+  --leaflet-tile-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+
 }
 
 .light {
 
   background-color: var(--gray-0);
   color: var(--gray-8);
-  transition: var(--quick-theme-transition);
+/*  transition: var(--quick-theme-transition);*/
 
   --box-border-medium: var(--border-box-width) solid var(--blue-4);
   --box-border: var(--border-box-width) solid var(--gray-8);
@@ -72,22 +74,30 @@
   --button-background-negative-color: var(--blue-8);
   --button-text-negative-color: var(--gray-1);
 
+  --leaflet-tile-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
 }
 
 .dark {
 
   background-color: var(--gray-8);
   color: var(--gray-0);
-  transition: var(--quick-theme-transition);
+/*  transition: var(--quick-theme-transition);*/
 
   --box-border-medium: var(--border-box-width) solid var(--blue-4);
-  --box-border: var(--border-box-width) solid var(--gray-0);
+  --box-border: var(--border-box-width) solid var(--gray-6);
 
-  --button-background-color: var(--gray-1);
-  --button-text-color: var(--gray-8);
-
+  --button-background-color: var(--gray-8);
+  --button-text-color: var(--gray-1);
   --button-background-negative-color: var(--blue-8);
   --button-text-negative-color: var(--gray-1);
+
+  .leaflet-tile {
+    filter: var(--leaflet-tile-filter, none);
+  }
+
+  .leaflet-container {
+    background-color: #303030;
+  }
 
 }
 

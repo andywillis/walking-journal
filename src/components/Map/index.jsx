@@ -3,7 +3,7 @@ import { effect } from '@preact/signals';
 import * as L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
-import { geoData } from '../../store';
+import { geoData, currentWalk } from '../../store';
 
 import style from './style.module.css';
 
@@ -38,8 +38,23 @@ function Map() {
     // mapRef.current.fitBounds(features.getBounds());
 
     effect(() => {
-      const feature = L.geoJSON(geoData.value, { style: myStyle }).addTo(mapRef.current);
-      mapRef.current.fitBounds(feature.getBounds());
+
+      // const coords = geoData.value.features.map(obj => {
+      //   const [ lng, lat ] = obj.geometry.coordinates;
+      //   return [ lat, lng ];
+      // });
+
+      const walk = geoData.value.features.find(feature => {
+        return feature.properties.id === currentWalk.value;
+      });
+
+      // console.log(geoData.value.features[1])
+
+      const line = L.geoJSON(walk, { style: myStyle }).addTo(mapRef.current);
+      // const line = L.polyline(coords, myStyle).addTo(mapRef.current);
+
+      mapRef.current.fitBounds(line.getBounds());
+
     });
 
   }, []);
