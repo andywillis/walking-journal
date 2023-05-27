@@ -1,7 +1,25 @@
-.map {
+.mapContainer {
   display: flex;
+  flex-direction: column;
   flex: 2;
+  min-height: 70vh;
+  max-height: 75vh;
   padding: var(--box-padding);
   border: var(--box-border);
   border-radius: var(--box-border-radius);
+
+  & header {
+    border: var(--box-border-medium);
+    height: fit-content;
+    border-radius: var(--box-border-inner-radius-top);
+    & h4 {
+      margin: 0;
+      padding: 0.25rem;
+    }
+  }
+
+  #mapid {
+    height: auto;
+  }
+
 }
