@@ -44,13 +44,13 @@ function Map() {
       //   return [ lat, lng ];
       // });
 
-      const walk = geoData.value.features.find(feature => {
-        return feature.properties.id === currentWalk.value;
+      const walk = geoData.value.find(obj => {
+        return obj.id === currentWalk.value;
       });
 
       // console.log(geoData.value.features[1])
 
-      const line = L.geoJSON(walk, { style: myStyle }).addTo(mapRef.current);
+      const line = L.geoJSON(walk.geodata, { style: myStyle }).addTo(mapRef.current);
       // const line = L.polyline(coords, myStyle).addTo(mapRef.current);
 
       mapRef.current.fitBounds(line.getBounds());

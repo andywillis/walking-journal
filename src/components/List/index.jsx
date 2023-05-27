@@ -16,7 +16,7 @@ function List() {
       <section class={style.list}>
         {walks.value.map(walk => {
 
-          const { id, name } = walk;
+          const { id, name, distance, unit } = walk;
 
           const walkCn = classNames({
             [style.item]: true,
@@ -29,7 +29,7 @@ function List() {
               type="button"
               class={walkCn}
               onClick={() => handleClick(id)}
-            >{id}: {name}
+            >{id}: {name} ({distance}{unit})
             </button>
           );
         })}

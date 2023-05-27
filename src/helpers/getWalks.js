@@ -1,9 +1,7 @@
-import { geoData } from '../store';
-
-function getWalks() {
-  return geoData.value.features.map(feature => {
-    const { id, name } = feature.properties;
-    return { id, name };
+function getWalks(walks) {
+  return walks.map(walk => {
+    const { id, name, distance, unit } = walk;
+    return { id, name, distance, unit };
   });
 }
 
