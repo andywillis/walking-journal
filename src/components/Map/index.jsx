@@ -51,14 +51,14 @@ function Map() {
 
         const {
           geometry: { coordinates },
-          properties: { icon }
+          properties: { icons: { png } }
         } = marker;
 
         const [ lng, lat ] = coordinates;
 
         return L.marker([ lat, lng ], {
           icon: L.icon({
-            iconUrl: `../../assets/images/icons/${icon}.png`,
+            iconUrl: `../../assets/images/icons/${png.name}.png`,
             iconSize: [ 32, 37 ],
             iconAnchor: [ 16, 37 ]
           })
