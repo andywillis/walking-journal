@@ -1,4 +1,4 @@
-import { Footer, Header, Main } from './components';
+import { Header, Main } from './components';
 
 import useTheme from './hooks/useTheme';
 
@@ -10,7 +10,7 @@ function App() {
     <>
       <Header />
       <Main />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 

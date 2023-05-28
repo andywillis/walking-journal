@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "distance": "node --experimental-specifier-resolution=node --experimental-json-modules src/tools/addDistance.js"
   },

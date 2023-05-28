@@ -2,19 +2,15 @@ import classNames from 'classnames';
 
 import style from './index.module.css';
 
-function Icon({ type, label, handleClick, disabled }) {
+function DarkLightIcon({ mode, label, handleClick, disabled }) {
 
-  const cn = classNames([
-    style.icon,
-    style[type]
-  ]);
+  const cn = classNames([ style.icon, style[mode] ]);
 
   return (
     <button
       type="button"
       aria-label={label}
       class={cn}
-      data-type={type}
       onClick={handleClick}
       disabled={disabled}
     />
@@ -22,4 +18,4 @@ function Icon({ type, label, handleClick, disabled }) {
 
 }
 
-export default Icon;
+export default DarkLightIcon;

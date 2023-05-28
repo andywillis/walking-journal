@@ -2,7 +2,7 @@ import fs from 'fs/promises';
 
 import { getFullWalkDistance } from '../helpers';
 
-import data from '../data/geodata2.json' assert { type: 'json' };
+import data from '../data/geodata.json' assert { type: 'json' };
 
 const newData = getFullWalkDistance(data, 'mi');
 
