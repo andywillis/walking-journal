@@ -40,16 +40,39 @@ function Map() {
         return obj.id === currentWalk.value;
       });
 
-      const lineStyle = {
-        ...walk.style.lineStyle,
-        ...style.line
-      };
+      const route = L.geoJSON(walk.route, {
+        style: {
+          ...walk.style.route,
+          ...style.line
+        }
+      });
 
-      const line = L.geoJSON(walk.geodata, {
-        style: lineStyle
-      }).addTo(mapRef.current);
+      const markers = walk.markers.features.map(marker => {
 
-      mapRef.current.fitBounds(line.getBounds());
+        const {
+          geometry: { coordinates },
+          properties: { icon }
+        } = marker;
+
+        const [ lng, lat ] = coordinates;
+
+        return L.marker([ lat, lng ], {
+          icon: L.icon({
+            iconUrl: `../../assets/images/icons/${icon}.png`,
+            iconSize: [ 32, 37 ],
+            iconAnchor: [ 16, 37 ]
+          })
+        });
+
+      });
+
+      L.featureGroup([ route, ...markers ]).addTo(mapRef.current);
+
+      // walk.markers.forEach(marker => {
+      //   L.geoJSON(walk.markers).addTo(mapRef.current);
+      // });
+
+      mapRef.current.fitBounds(route.getBounds());
 
     });
 
