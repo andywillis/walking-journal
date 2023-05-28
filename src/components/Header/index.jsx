@@ -1,4 +1,4 @@
-import Icon from '../Icon';
+import DarkLightIcon from '../DarkLightIcon';
 
 import { darkMode } from '../../store';
 
@@ -13,17 +13,10 @@ function Header() {
     <header class={style.header}>
       <h1>Walking Map</h1>
       <section class={style.icons}>
-        <Icon
-          type="light"
-          label="Switch to light mode"
+        <DarkLightIcon
+          mode={darkMode.peek() ? 'dark' : 'light'}
+          label="Switch light/dark mode"
           handleClick={handleClick}
-          disabled={!darkMode.value}
-        />
-        <Icon
-          type="dark"
-          label="Switch to dark mode"
-          handleClick={handleClick}
-          disabled={darkMode.value}
         />
       </section>
     </header>

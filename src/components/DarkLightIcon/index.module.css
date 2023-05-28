@@ -4,14 +4,29 @@
   background-position: center center;
   width: 48px;
   aspect-ratio: 1;
-  background-color: white;
+  background-color: transparent;
   border-radius: var(--box-border-radius);
   
   &:hover:not(:disabled) {
     cursor: pointer;
-    background-color: var(--box-highlight);
   }
-  
+
+  &.light {
+    background-image: url('../../assets/images/moon.png');
+  }
+
+  &.dark {
+    background-image: url('../../assets/images/sun_neg.png');
+  }
+
+  &.light:hover {
+    background-color: var(--gray-2);
+  }
+
+  &.dark:hover {
+    background-color: var(--gray-7);
+  }
+
   &:disabled {
     opacity: 0.2;
   }
@@ -20,14 +35,4 @@
     margin-left: 0.25rem;
   }
 
-}
-
-.light {
-  composes: icon;
-  background-image: url('../../assets/images/sun.png');
-}
-
-.dark {
-  composes: icon;
-  background-image: url('../../assets/images/moon.png');
 }

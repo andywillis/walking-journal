@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "distance": "node --experimental-specifier-resolution=node --experimental-json-modules src/tools/addDistance.js"
   },
   "devDependencies": {
     "@babel/core": "^7.21.8",
