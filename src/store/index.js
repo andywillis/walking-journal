@@ -1,6 +1,6 @@
 import { signal } from '@preact/signals';
 
-import data from '../data/geodata_distance.json';
+import data from '../data/geodata_full.json';
 
 import { getWalks } from '../helpers';
 

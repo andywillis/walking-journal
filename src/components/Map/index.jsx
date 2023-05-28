@@ -3,7 +3,7 @@ import { effect } from '@preact/signals';
 
 import * as L from 'leaflet';
 
-import { geoData, currentWalk } from '../../store';
+import { geoData, currentWalk, darkMode } from '../../store';
 
 import 'leaflet/dist/leaflet.css';
 import style from './style.module.css';
@@ -34,6 +34,7 @@ function Map() {
       ]
     }).addTo(mapRef.current);
 
+    // Signals effect
     effect(() => {
 
       const walk = geoData.value.find(obj => {
@@ -58,7 +59,7 @@ function Map() {
 
         return L.marker([ lat, lng ], {
           icon: L.divIcon({
-            html: svg.html,
+            html: svg.html[darkMode.value ? 'dark' : 'light'],
             // iconUrl: `../../assets/images/icons/${png.name}.png`,
             // iconSize: [ 5, 5 ],
             // iconAnchor: [ 16, 37 ]

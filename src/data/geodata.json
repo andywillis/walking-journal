@@ -6,7 +6,7 @@
   "dates": [],
   "style": {
     "route": {
-      "color": "red"
+      "color": "orange"
     },
     "markers": {}
   },
@@ -277,6 +277,28 @@
           "coordinates": [
             1.371146633986384,
             51.140433869437096
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "icons": {
+            "png": {
+              "name": "castle"
+            },
+            "maki": {
+              "name": "castle"
+            }
+          },
+          "label": "Dover Castle",
+          "description": ""
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            1.3213203403986524,
+            51.129605877658896
           ]
         }
       }
@@ -664,7 +686,7 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-            347927610445367,
+            1.347927610445367,
             51.27406604074224
           ]
         }

@@ -69,7 +69,21 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --leaflet-tile-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+  --leaflet-tile-filter:
+    brightness(0.6)
+    invert(1)
+    contrast(3)
+    hue-rotate(200deg)
+    saturate(0.4)
+    brightness(0.7);
+
+  --svg-icon-filter:
+    brightness(0.6)
+    invert(1)
+    contrast(3)
+    hue-rotate(200deg)
+    saturate(0.4)
+    brightness(0.7);
 
 }
 
@@ -89,8 +103,7 @@
   --button-background-negative-color: var(--blue-8);
   --button-text-negative-color: var(--gray-1);
 
-  --leaflet-tile-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
-}
+  }
 
 .dark {
 
