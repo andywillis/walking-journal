@@ -51,16 +51,17 @@ function Map() {
 
         const {
           geometry: { coordinates },
-          properties: { icons: { png } }
+          properties: { icons: { svg } }
         } = marker;
 
         const [ lng, lat ] = coordinates;
 
         return L.marker([ lat, lng ], {
-          icon: L.icon({
-            iconUrl: `../../assets/images/icons/${png.name}.png`,
-            iconSize: [ 32, 37 ],
-            iconAnchor: [ 16, 37 ]
+          icon: L.divIcon({
+            html: svg.html,
+            // iconUrl: `../../assets/images/icons/${png.name}.png`,
+            // iconSize: [ 5, 5 ],
+            // iconAnchor: [ 16, 37 ]
           })
         });
 
