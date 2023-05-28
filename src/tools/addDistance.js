@@ -1,11 +1,10 @@
 import fs from 'fs/promises';
 
+import rootname from '../../rootname';
+
 import { getFullWalkDistance } from '../helpers';
 
-import data from '../data/geodata.json' assert { type: 'json' };
-
+const data = JSON.parse(await fs.readFile(`${rootname}/src/data/geodata.json`, 'utf8'));
 const newData = getFullWalkDistance(data, 'mi');
-
-await fs.writeFile('../data/geodata_distance.json', JSON.stringify(newData, null, 2), 'utf8');
-
+await fs.writeFile(`${rootname}/src/data/geodata_distance.json`, JSON.stringify(newData, null, 2), 'utf8');
 console.log('File written');

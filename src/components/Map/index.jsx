@@ -1,18 +1,18 @@
 import { useEffect, useRef } from 'preact/hooks';
 import { effect } from '@preact/signals';
+
 import * as L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
 
 import { geoData, currentWalk } from '../../store';
 
+import 'leaflet/dist/leaflet.css';
 import style from './style.module.css';
 
-const myStyle = {
-  color: '#ff7800',
-  weight: 5,
-  opacity: 0.65
-};
-
+/**
+ * Map
+ *
+ * @return {React.ReactElement}
+ */
 function Map() {
 
   const mapRef = useRef();
@@ -34,24 +34,20 @@ function Map() {
       ]
     }).addTo(mapRef.current);
 
-    // const features = L.geoJSON(geoData.value, { style: myStyle }).addTo(mapRef.current);
-    // mapRef.current.fitBounds(features.getBounds());
-
     effect(() => {
-
-      // const coords = geoData.value.features.map(obj => {
-      //   const [ lng, lat ] = obj.geometry.coordinates;
-      //   return [ lat, lng ];
-      // });
 
       const walk = geoData.value.find(obj => {
         return obj.id === currentWalk.value;
       });
 
-      // console.log(geoData.value.features[1])
+      const lineStyle = {
+        ...walk.style.lineStyle,
+        ...style.line
+      };
 
-      const line = L.geoJSON(walk.geodata, { style: myStyle }).addTo(mapRef.current);
-      // const line = L.polyline(coords, myStyle).addTo(mapRef.current);
+      const line = L.geoJSON(walk.geodata, {
+        style: lineStyle
+      }).addTo(mapRef.current);
 
       mapRef.current.fitBounds(line.getBounds());
 

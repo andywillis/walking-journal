@@ -1,9 +1,14 @@
 [{
   "id": 1,
-  "name": "The Pines -> Fan Bay",
+  "name": "The Pines to Fan Bay",
   "town": "St. Margaret's Bay",
   "county": "Kent",
   "dates": [],
+  "style": {
+    "lineStyle": {
+      "color": "red"
+    }
+  },
   "geodata": {
     "type": "FeatureCollection",
     "features": [
@@ -219,6 +224,11 @@
   "town": "Sandwich",
   "county": "Kent",
   "dates": [],
+  "style": {
+    "lineStyle": {
+      "color": "orange"
+    }
+  },
   "geodata": {
     "type": "FeatureCollection",
     "features": [

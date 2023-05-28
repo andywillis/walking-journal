@@ -22,3 +22,12 @@
   }
 
 }
+
+.line {
+  color: green;
+  width: 5px;
+  opacity: 0.65;
+}
+
+.orange { color: #ff7800; }
+.red { color: #ff0000; }
