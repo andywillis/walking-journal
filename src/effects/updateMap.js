@@ -1,6 +1,6 @@
 import * as L from 'leaflet';
 
-function updateMap(geoData, currentWalk, darkMode, mapRef) {
+function updateMap({ geoData, currentWalk, darkMode, mapRef }) {
 
   const walk = geoData.find(obj => {
     return obj.id === currentWalk;

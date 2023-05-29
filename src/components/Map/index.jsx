@@ -38,12 +38,12 @@ function Map() {
     }).addTo(mapRef.current);
 
     // Signals effect
-    effect(() => updateMap(
-      geoData.peek(),
-      currentWalk.value,
-      darkMode.value,
+    effect(() => updateMap({
+      geoData: geoData.peek(),
+      currentWalk: currentWalk.value,
+      darkMode: darkMode.value,
       mapRef
-    ));
+    }));
 
   }, []);
 
