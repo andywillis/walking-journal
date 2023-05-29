@@ -3,7 +3,9 @@ import { effect } from '@preact/signals';
 
 import * as L from 'leaflet';
 
-import { geoData, currentWalk } from '../../store';
+// import { geoData, currentWalk, darkMode } from '../../store';
+
+import updateMap from '../../effects/updateMap';
 
 import 'leaflet/dist/leaflet.css';
 import style from './style.module.css';
@@ -24,8 +26,7 @@ function Map() {
     mapRef.current = L.map('mapid', { dragging: !L.Browser.mobile }).setView(home, 12);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       maxZoom: 18,
       minZoom: 3,
       bounds: [
@@ -34,24 +35,8 @@ function Map() {
       ]
     }).addTo(mapRef.current);
 
-    effect(() => {
-
-      const walk = geoData.value.find(obj => {
-        return obj.id === currentWalk.value;
-      });
-
-      const lineStyle = {
-        ...walk.style.lineStyle,
-        ...style.line
-      };
-
-      const line = L.geoJSON(walk.geodata, {
-        style: lineStyle
-      }).addTo(mapRef.current);
-
-      mapRef.current.fitBounds(line.getBounds());
-
-    });
+    // Signals effect
+    effect(() => updateMap(mapRef));
 
   }, []);
 

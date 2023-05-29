@@ -5,18 +5,16 @@
   "county": "Kent",
   "dates": [],
   "style": {
-    "lineStyle": {
-      "color": "red"
-    }
+    "route": {
+      "color": "orange"
+    },
+    "markers": {}
   },
-  "geodata": {
+  "route": {
     "type": "FeatureCollection",
     "features": [
       {
         "type": "Feature",
-        "properties": {
-          "type": "walk"
-        },
         "geometry": {
           "type": "LineString",
           "coordinates": [
@@ -216,6 +214,95 @@
         }
       }
     ]
+  },
+  "markers": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "icons": {
+            "png": {
+              "name": "start"
+            },
+            "maki": {
+              "name": "circle-stroked"
+            }
+          }
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            1.3823466660461747,
+            51.14776960154373
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "icons": {
+            "png": {
+              "name": "finish"
+            },
+            "maki": {
+              "name": "circle"
+            }
+          }
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            1.3823466660461747,
+            51.14776960154373
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "icons": {
+            "png": {
+              "name": "lighthouse"
+            },
+            "maki": {
+              "name": "lighthouse"
+            }
+          },
+          "label": "South Foreland Lighthouse",
+          "description": ""
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            1.371146633986384,
+            51.140433869437096
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "icons": {
+            "png": {
+              "name": "castle"
+            },
+            "maki": {
+              "name": "castle"
+            }
+          },
+          "label": "Dover Castle",
+          "description": ""
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            1.3213203403986524,
+            51.129605877658896
+          ]
+        }
+      }
+    ]
   }
 },
 {
@@ -225,18 +312,16 @@
   "county": "Kent",
   "dates": [],
   "style": {
-    "lineStyle": {
+    "route": {
       "color": "orange"
-    }
+    },
+    "markers": {}
   },
-  "geodata": {
+  "route": {
     "type": "FeatureCollection",
     "features": [
       {
         "type": "Feature",
-        "properties": {
-          "type": "walk"
-        },
         "geometry": {
           "type": "LineString",
           "coordinates": [
@@ -556,6 +641,73 @@
               1.3364478040434449,
               51.27570499882222
             ]
+          ]
+        }
+      }
+    ]
+  },
+  "markers": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "icons": {
+            "png": {
+              "name": "start"
+            },
+            "maki": {
+              "name": "circle-stroked"
+            }
+          }
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            1.3364746304017672,
+            51.275701537684995
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "icons": {
+            "png": {
+              "name": "bridge_old"
+            },
+            "maki": {
+              "name": "bridge"
+            }
+          },
+          "label": "Sluice Bridge",
+          "description": ""
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            1.347927610445367,
+            51.27406604074224
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "icons": {
+            "png": {
+              "name": "start"
+            },
+            "maki": {
+              "name": "circle"
+            }
+          }
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            1.3364746304017672,
+            51.275701537684995
           ]
         }
       }

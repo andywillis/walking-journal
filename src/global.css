@@ -43,6 +43,15 @@
   --gray-7: hsl(var(--gray-7-hsl));
   --gray-8: hsl(var(--gray-8-hsl));
 
+  --orange-0: hsl(var(--orange-0-hsl));
+  --orange-1: hsl(var(--orange-1-hsl));
+  --orange-2: hsl(var(--orange-2-hsl));
+  --orange-4: hsl(var(--orange-4-hsl));
+  --orange-5: hsl(var(--orange-5-hsl));
+  --orange-6: hsl(var(--orange-6-hsl));
+  --orange-7: hsl(var(--orange-7-hsl));
+  --orange-8: hsl(var(--orange-8-hsl));
+  
   --yellow-0: hsl(var(--yellow-0-hsl));
   --yellow-1: hsl(var(--yellow-1-hsl));
   --yellow-2: hsl(var(--yellow-2-hsl));
@@ -51,6 +60,8 @@
   --yellow-6: hsl(var(--yellow-6-hsl));
   --yellow-7: hsl(var(--yellow-7-hsl));
   --yellow-8: hsl(var(--yellow-8-hsl));
+
+  --purple-4: hsl(var(--purple-4-hsl));
 
   --box-highlight: var(--yellow-2);
   --box-padding: 0.25rem;
@@ -69,7 +80,21 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --leaflet-tile-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+  --leaflet-tile-filter:
+    brightness(0.6)
+    invert(1)
+    contrast(3)
+    hue-rotate(200deg)
+    saturate(0.4)
+    brightness(0.7);
+
+  --svg-icon-filter:
+    brightness(0.6)
+    invert(1)
+    contrast(3)
+    hue-rotate(200deg)
+    saturate(0.4)
+    brightness(0.7);
 
 }
 
@@ -89,8 +114,7 @@
   --button-background-negative-color: var(--blue-8);
   --button-text-negative-color: var(--gray-1);
 
-  --leaflet-tile-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
-}
+  }
 
 .dark {
 

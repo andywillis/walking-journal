@@ -1,5 +1,5 @@
 {
-  "startingPoints: {
+  "startingPoints": {
     "type": "FeatureCollection",
     "features": [
       {
@@ -156,7 +156,7 @@
         }
       }
     ]
-  }
+  },
   "castles": {
     "type": "FeatureCollection",
     "features": [
@@ -201,7 +201,7 @@
       }
     ]
   },
-  "monuments": `{
+  "monuments": {
     "type": "FeatureCollection",
     "features": [
       {
