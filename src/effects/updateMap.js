@@ -1,11 +1,9 @@
 import * as L from 'leaflet';
 
-import { geoData, currentWalk, darkMode } from '../store';
+function updateMap(geoData, currentWalk, darkMode, mapRef) {
 
-function updateMap(mapRef) {
-
-  const walk = geoData.value.find(obj => {
-    return obj.id === currentWalk.value;
+  const walk = geoData.find(obj => {
+    return obj.id === currentWalk;
   });
 
   const route = L.geoJSON(walk.route, {
@@ -27,7 +25,7 @@ function updateMap(mapRef) {
 
     return L.marker([ lat, lng ], {
       icon: L.divIcon({
-        html: svg.html[darkMode.value ? 'dark' : 'light']
+        html: svg.html[darkMode ? 'dark' : 'light']
       })
     });
 

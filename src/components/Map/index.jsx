@@ -3,7 +3,7 @@ import { effect } from '@preact/signals';
 
 import * as L from 'leaflet';
 
-// import { geoData, currentWalk, darkMode } from '../../store';
+import { geoData, currentWalk, darkMode } from '../../store';
 
 import updateMap from '../../effects/updateMap';
 
@@ -23,7 +23,9 @@ function Map() {
 
     const home = [ 51.275710, 1.336495 ];
 
-    mapRef.current = L.map('mapid', { dragging: !L.Browser.mobile }).setView(home, 12);
+    mapRef.current = L.map('mapid', {
+      dragging: !L.Browser.mobile
+    }).setView(home, 12);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -36,7 +38,12 @@ function Map() {
     }).addTo(mapRef.current);
 
     // Signals effect
-    effect(() => updateMap(mapRef));
+    effect(() => updateMap(
+      geoData.peek(),
+      currentWalk.value,
+      darkMode.value,
+      mapRef
+    ));
 
   }, []);
 
