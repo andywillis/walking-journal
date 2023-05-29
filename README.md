@@ -2,6 +2,13 @@
 
 Walking map.
 
+## Tech
+
+- Preact
+- Signals
+- Leaflet
+- OpenProps
+
 ## Licence
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
