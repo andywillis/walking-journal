@@ -1,5 +1,7 @@
 import * as L from 'leaflet';
 
+import { createMarkers } from '../helpers';
+
 /**
  * updateMap
  *
@@ -26,39 +28,8 @@ function updateMap(geoData, currentWalk, darkMode, mapRef) {
 		}
 	});
 
-	const featureMarkers = walk.featureMarkers.features.map(marker => {
-
-		const {
-			geometry: { coordinates },
-			properties: { icons }
-		} = marker;
-
-		const [ lng, lat ] = coordinates;
-
-		return L.marker([ lat, lng ], {
-			icon: L.divIcon({
-				html: icons[darkMode ? 'dark' : 'light']
-			})
-		});
-
-	});
-
-	const routeMarkers = walk.routeMarkers.features.map(marker => {
-
-		const {
-			geometry: { coordinates },
-			properties: { icons }
-		} = marker;
-
-		const [ lng, lat ] = coordinates;
-
-		return L.marker([ lat, lng ], {
-			icon: L.divIcon({
-				html: icons[darkMode ? 'dark' : 'light']
-			})
-		});
-
-	});
+	const featureMarkers = createMarkers(walk.landmarkMarkers.features, darkMode);
+	const routeMarkers = createMarkers(walk.routeMarkers.features, darkMode);
 
 	L.featureGroup([ route, ...featureMarkers, ...routeMarkers ]).addTo(mapRef.current);
 

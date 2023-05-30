@@ -227,8 +227,8 @@
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						1.3823466660461747,
-						51.14776960154373
+						1.3826367155462265,
+						51.148531818668005
 					]
 				}
 			},
@@ -242,14 +242,14 @@
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						1.3823466660461747,
-						51.14776960154373
+						1.3826107552137559,
+						51.14832922805073
 					]
 				}
 			}
 		]
 	},
-	"featureMarkers": {
+	"landmarkMarkers": {
 		"type": "featureCollection",
 		"features": [
 			{
@@ -638,8 +638,8 @@
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						1.3823466660461747,
-						51.14776960154373
+						1.335901541775823,
+						51.2757680047118
 					]
 				}
 			},
@@ -653,14 +653,14 @@
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						1.3823466660461747,
-						51.14776960154373
+						1.3365162909088943,
+						51.276098064136335
 					]
 				}
 			}
 		]
 	},
-	"featureMarkers": {
+	"landmarkMarkers": {
 		"type": "featureCollection",
 		"features": [
 			{
@@ -1024,8 +1024,8 @@
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						1.3823466660461747,
-						51.14776960154373
+						1.232274191378707,
+						51.22216069185461
 					]
 				}
 			},
@@ -1039,14 +1039,14 @@
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						1.3823466660461747,
-						51.14776960154373
+						1.2319562052863748,
+						51.22210684880874
 					]
 				}
 			}
 		]
 	},
-	"featureMarkers": {
+	"landmarkMarkers": {
 		"type": "FeatureCollection",
 		"features": [
 			{
