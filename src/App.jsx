@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import { Header, Main } from './components';
 
 import useTheme from './hooks/useTheme';

@@ -1,6 +1,8 @@
-// @ts-nocheck
-
 import getGeoDataDistance from './getGeoDataDistance';
+
+export function toTwoDecimalPlaces(distance) {
+	return Number.parseFloat((Math.round(distance * 100) / 100).toFixed(2));
+}
 
 function getFullWalkDistance(data, unit) {
 	return data.map(obj => {
@@ -13,7 +15,7 @@ function getFullWalkDistance(data, unit) {
 		}
 		return {
 			...obj,
-			distance: Number.parseFloat((Math.round(distance * 100) / 100).toFixed(2)),
+			distance: toTwoDecimalPlaces(distance),
 			unit
 		};
 	});

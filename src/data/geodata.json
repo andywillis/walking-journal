@@ -220,6 +220,7 @@
 			{
 				"type": "Feature",
 				"properties": {
+					"name": "Start",
 					"icons": {
 						"png": {
 							"name": "start"
@@ -240,6 +241,7 @@
 			{
 				"type": "Feature",
 				"properties": {
+					"name": "Finish",
 					"icons": {
 						"png": {
 							"name": "finish"
@@ -260,6 +262,7 @@
 			{
 				"type": "Feature",
 				"properties": {
+					"name": "Lighthouse",
 					"icons": {
 						"png": {
 							"name": "lighthouse"
@@ -650,6 +653,7 @@
 			{
 				"type": "Feature",
 				"properties": {
+					"name": "Start",
 					"icons": {
 						"png": {
 							"name": "start"
@@ -670,6 +674,7 @@
 			{
 				"type": "Feature",
 				"properties": {
+					"name": "Bridge",
 					"icons": {
 						"png": {
 							"name": "bridge_old"
@@ -692,9 +697,10 @@
 			{
 				"type": "Feature",
 				"properties": {
+					"name": "Finish",
 					"icons": {
 						"png": {
-							"name": "start"
+							"name": "finish"
 						},
 						"maki": {
 							"name": "circle"
@@ -1048,6 +1054,7 @@
 			{
 				"type": "Feature",
 				"properties": {
+					"name": "Start",
 					"icons": {
 						"png": {
 							"name": "start"
@@ -1068,6 +1075,7 @@
 			{
 				"type": "Feature",
 				"properties": {
+					"name": "Finish",
 					"icons": {
 						"png": {
 							"name": "finish"
@@ -1088,6 +1096,7 @@
 			{
 				"type": "Feature",
 				"properties": {
+					"name": "Ancient Tree",
 					"icons": {
 						"png": {
 							"name": "tree"

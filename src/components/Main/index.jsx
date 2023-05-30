@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import List from '../List';
 import Map from '../Map';
 

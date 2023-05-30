@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import DarkLightIcon from '../DarkLightIcon';
 
 import { darkMode } from '../../signals';

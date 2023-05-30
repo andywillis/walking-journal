@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import { useEffect, useRef } from 'preact/hooks';
 import { effect } from '@preact/signals';
 
@@ -26,7 +24,8 @@ function Map() {
 		const home = L.latLng(51.275710, 1.336495);
 
 		mapRef.current = L.map('mapid', {
-			dragging: !L.Browser.mobile
+			dragging: !L.Browser.mobile,
+			scrollWheelZoom: !L.Browser.mobile
 		}).setView(home, 12);
 
 		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

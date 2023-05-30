@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import classNames from 'classnames';
 import style from './style.module.css';
 

@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import style from './style.module.css';
 
 /**

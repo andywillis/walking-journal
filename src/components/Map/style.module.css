@@ -3,6 +3,7 @@
 	flex-direction: column;
 	flex: 2;
 	max-height: 80vh;
+	max-width: 100vw;
 	padding: var(--box-padding);
 	border: var(--box-border);
 	border-radius: var(--box-border-radius);
