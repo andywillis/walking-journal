@@ -1,6 +1,6 @@
 # Walking Map
 
-Walking map.
+An eary prototype map of my walks.
 
 ## Tech
 
