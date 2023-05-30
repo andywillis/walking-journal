@@ -8,7 +8,7 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"buildJson": "node --experimental-specifier-resolution=node --experimental-json-modules src/tools/buildCompleteJson.js",
-		"convert": "node src/tools/convertGpsPointsToLineString.js id=3 name=Fredville town=Nonnington county=Kent"
+		"convert": "node --experimental-specifier-resolution=node --experimental-json-modules src/tools/convertGpsPointsToLineString.js id=3 name=Fredville town=Nonnington county=Kent"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.21.8",

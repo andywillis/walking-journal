@@ -1,5 +1,7 @@
 import fs from 'fs/promises';
 
+import rootname from '../../rootname';
+
 const formatter = new Intl.DateTimeFormat('en-GB');
 
 function convertGpsPointsToLineString(data, args) {
@@ -100,8 +102,8 @@ function convertGpsPointsToLineString(data, args) {
 	};
 }
 
-const inputPath = './input';
-const outputPath = './output';
+const inputPath = `${rootname}/src/tools/input`;
+const outputPath = `${rootname}/src/tools/output`;
 const folder = await fs.readdir(inputPath);
 
 const args = process.argv.slice(2).reduce((acc, c) => {
