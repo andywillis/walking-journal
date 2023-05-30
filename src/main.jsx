@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { render } from 'preact';
 
 import App from './App';

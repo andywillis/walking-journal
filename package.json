@@ -1,36 +1,36 @@
 {
-  "name": "walking-map-vanilla",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "buildJson": "node --experimental-specifier-resolution=node --experimental-json-modules src/tools/buildCompleteJson.js",
-    "convert": "node src/tools/convertGpsPointsToLineString.js id=3 name=Fredville town=Nonnington county=Kent"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.21.8",
-    "@babel/eslint-parser": "^7.21.8",
-    "@babel/plugin-syntax-import-assertions": "^7.20.0",
-    "@preact/preset-vite": "^2.5.0",
-    "babel-preset-preact": "2.0.0",
-    "eslint": "^8.41.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-preact": "0.1.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "postcss-nesting": "11.2.2",
-    "vite": "^4.3.8",
-    "vite-plugin-compression": "0.5.1"
-  },
-  "dependencies": {
-    "@preact/signals": "1.1.3",
-    "classnames": "^2.3.2",
-    "leaflet": "1.9.4",
-    "open-props": "^1.5.8",
-    "preact": "^10.15.0"
-  }
+	"name": "walking-map-vanilla",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"buildJson": "node --experimental-specifier-resolution=node --experimental-json-modules src/tools/buildCompleteJson.js",
+		"convert": "node src/tools/convertGpsPointsToLineString.js id=3 name=Fredville town=Nonnington county=Kent"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.21.8",
+		"@babel/eslint-parser": "^7.21.8",
+		"@babel/plugin-syntax-import-assertions": "^7.20.0",
+		"@preact/preset-vite": "^2.5.0",
+		"babel-preset-preact": "2.0.0",
+		"eslint": "^8.41.0",
+		"eslint-config-airbnb": "^19.0.4",
+		"eslint-plugin-import": "^2.27.5",
+		"eslint-plugin-jsx-a11y": "^6.7.1",
+		"eslint-plugin-preact": "0.1.0",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"postcss-nesting": "11.2.2",
+		"vite": "^4.3.8",
+		"vite-plugin-compression": "0.5.1"
+	},
+	"dependencies": {
+		"@preact/signals": "1.1.3",
+		"classnames": "^2.3.2",
+		"leaflet": "1.9.4",
+		"open-props": "^1.5.8",
+		"preact": "^10.15.0"
+	}
 }
