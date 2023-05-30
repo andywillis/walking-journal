@@ -1,12 +1,12 @@
 .header {
-  display: flex;
-  min-height: 13vh;
-  max-height: 18vh;
-  & h1 {
-    margin: 0;
-  }
-  & .icons {
-    margin-left: auto;
-    align-self: center;
-  }
+	display: flex;
+	min-height: 13vh;
+	max-height: 18vh;
+	& h1 {
+		margin: 0;
+	}
+	& .icons {
+		margin-left: auto;
+		align-self: center;
+	}
 }

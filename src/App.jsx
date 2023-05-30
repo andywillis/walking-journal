@@ -4,15 +4,15 @@ import useTheme from './hooks/useTheme';
 
 function App() {
 
-  useTheme();
+	useTheme();
 
-  return (
-    <>
-      <Header />
-      <Main />
-      {/* <Footer /> */}
-    </>
-  );
+	return (
+		<>
+			<Header />
+			<Main />
+			{/* <Footer /> */}
+		</>
+	);
 
 }
 

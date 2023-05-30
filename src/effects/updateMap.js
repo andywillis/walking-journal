@@ -1,41 +1,51 @@
 import * as L from 'leaflet';
 
-import { geoData, currentWalk, darkMode } from '../store';
+/**
+ * updateMap
+ *
+ * Accepts a set of geodata, the current walk value,
+ * the dark mode value, and the map reference, and uses that
+ * information to add routes and markers to the map
+ *
+ * @param {object} geoData
+ * @param {number} currentWalk
+ * @param {boolean} darkMode
+ * @param {object} mapRef
+ */
+function updateMap(geoData, currentWalk, darkMode, mapRef) {
 
-function updateMap(mapRef) {
+	const walk = geoData.find(obj => {
+		return obj.id === currentWalk;
+	});
 
-  const walk = geoData.value.find(obj => {
-    return obj.id === currentWalk.value;
-  });
+	const route = L.geoJSON(walk.route, {
+		style: {
+			color: 'var(--orange-6)',
+			weight: 5,
+			opacity: 0.65
+		}
+	});
 
-  const route = L.geoJSON(walk.route, {
-    style: {
-      color: 'var(--orange-6)',
-      weight: 5,
-      opacity: 0.65
-    }
-  });
+	const markers = walk.markers.features.map(marker => {
 
-  const markers = walk.markers.features.map(marker => {
+		const {
+			geometry: { coordinates },
+			properties: { icons: { svg } }
+		} = marker;
 
-    const {
-      geometry: { coordinates },
-      properties: { icons: { svg } }
-    } = marker;
+		const [ lng, lat ] = coordinates;
 
-    const [ lng, lat ] = coordinates;
+		return L.marker([ lat, lng ], {
+			icon: L.divIcon({
+				html: svg.html[darkMode ? 'dark' : 'light']
+			})
+		});
 
-    return L.marker([ lat, lng ], {
-      icon: L.divIcon({
-        html: svg.html[darkMode.value ? 'dark' : 'light']
-      })
-    });
+	});
 
-  });
+	L.featureGroup([ route, ...markers ]).addTo(mapRef.current);
 
-  L.featureGroup([ route, ...markers ]).addTo(mapRef.current);
-
-  mapRef.current.fitBounds(route.getBounds());
+	mapRef.current.fitBounds(route.getBounds());
 
 }
 

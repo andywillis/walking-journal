@@ -3,7 +3,7 @@ import { effect } from '@preact/signals';
 
 import * as L from 'leaflet';
 
-// import { geoData, currentWalk, darkMode } from '../../store';
+import { geoData, currentWalk, darkMode } from '../../signals';
 
 import updateMap from '../../effects/updateMap';
 
@@ -17,32 +17,41 @@ import style from './style.module.css';
  */
 function Map() {
 
-  const mapRef = useRef();
+	const mapRef = useRef({});
 
-  useEffect(() => {
+	useEffect(() => {
 
-    const home = [ 51.275710, 1.336495 ];
+		const home = L.latLng(51.275710, 1.336495);
 
-    mapRef.current = L.map('mapid', { dragging: !L.Browser.mobile }).setView(home, 12);
+		mapRef.current = L.map('mapid', {
+			dragging: !L.Browser.mobile,
+			scrollWheelZoom: !L.Browser.mobile
+		}).setView(home, 12);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      maxZoom: 18,
-      minZoom: 3,
-      bounds: [
-        [ -180, 180 ],
-        [ 180, -180 ]
-      ]
-    }).addTo(mapRef.current);
+		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+			maxZoom: 18,
+			minZoom: 3,
+			bounds: [
+				[ -180, 180 ],
+				[ 180, -180 ]
+			]
+		}).addTo(mapRef.current);
 
-    // Signals effect
-    effect(() => updateMap(mapRef));
+		// Signals effect that updates the map by
+		// adding subscriptions to various signal values
+		effect(() => updateMap(
+			geoData.peek(),
+			currentWalk.value,
+			darkMode.value,
+			mapRef
+		));
 
-  }, []);
+	}, []);
 
-  return (
-    <section ref={mapRef} class={style.mapContainer} id="mapid" />
-  );
+	return (
+		<section ref={mapRef} class={style.mapContainer} id="mapid" />
+	);
 
 }
 

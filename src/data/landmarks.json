@@ -1,222 +1,222 @@
 {
-  "startingPoints": {
-    "type": "FeatureCollection",
-    "features": [
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            1.3078773021697998,
-            51.24703490785793
-          ]
-        },
-        "properties": {
-          "name": "Eastry"
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            1.3398385047912598,
-            51.275320137101204
-          ]
-        },
-        "properties": {
-          "name": "Sandwich Library"
-        }
-      }
-    ]
-  },
-  "churches": {
-    "type": "FeatureCollection",
-    "features": [
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            1.309744119644165,
-            51.245503665529945
-          ]
-        },
-        "properties": {
-          "name": "St. Mary's, Eastry."
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            1.3400208950042725,
-            51.27505166703643
-          ]
-        },
-        "properties": {
-          "name": "St. Mary's, Sandwich."
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            1.317061185836792,
-            51.33169091288232
-          ]
-        },
-        "properties": {
-          "name": "Abbey, Minster."
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            1.2697899341583252,
-            51.341135162634636
-          ]
-        },
-        "properties": {
-          "name": "Church of St. Mary Magdelene, Monkton."
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            1.2515723705291748,
-            51.3541957192427
-          ]
-        },
-        "properties": {
-          "name": "St. Nicholas At Wade."
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            1.3070619106292725,
-            51.2630024580254
-          ]
-        },
-        "properties": {
-          "name": "St. Mary The Blessed Virgin, Woodnesborough."
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            1.3431429862976074,
-            51.273467661721156
-          ]
-        },
-        "properties": {
-          "name": "St. Clements, Sandwich."
-        }
-      }
-    ]
-  },
-  "pubs": {
-    "type": "FeatureCollection",
-    "features": [
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            1.3449668884277344,
-            51.23693314019542
-          ]
-        },
-        "properties": {
-          "name": "The Crown, Finglesham."
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            1.3210201263427734,
-            51.24324700496246
-          ]
-        },
-        "properties": {
-          "name": "The Blazing Donkey, Eastry."
-        }
-      }
-    ]
-  },
-  "castles": {
-    "type": "FeatureCollection",
-    "features": [
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            1.3320493698120117,
-            51.293941418366195
-          ]
-        },
-        "properties": {
-          "name": "Richborough Roman Fort and Amphitheatre."
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            1.3212347030639648,
-            51.12959947058639
-          ]
-        },
-        "properties": {
-          "name": "Dover Castle."
-        }
-      },
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            1.1973059177398682,
-            51.379053425247115
-          ]
-        },
-        "properties": {
-          "name": "Reculver Castle."
-        }
-      }
-    ]
-  },
-  "monuments": {
-    "type": "FeatureCollection",
-    "features": [
-      {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-            1.357133388519287,
-            51.32862731392897
-          ]
-        },
-        "properties": {
-          "name": "St. Augustine's Cross."
-        }
-      }
-    ]
-  }
+	"startingPoints": {
+		"type": "FeatureCollection",
+		"features": [
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						1.3078773021697998,
+						51.24703490785793
+					]
+				},
+				"properties": {
+					"name": "Eastry"
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						1.3398385047912598,
+						51.275320137101204
+					]
+				},
+				"properties": {
+					"name": "Sandwich Library"
+				}
+			}
+		]
+	},
+	"churches": {
+		"type": "FeatureCollection",
+		"features": [
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						1.309744119644165,
+						51.245503665529945
+					]
+				},
+				"properties": {
+					"name": "St. Mary's, Eastry."
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						1.3400208950042725,
+						51.27505166703643
+					]
+				},
+				"properties": {
+					"name": "St. Mary's, Sandwich."
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						1.317061185836792,
+						51.33169091288232
+					]
+				},
+				"properties": {
+					"name": "Abbey, Minster."
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						1.2697899341583252,
+						51.341135162634636
+					]
+				},
+				"properties": {
+					"name": "Church of St. Mary Magdelene, Monkton."
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						1.2515723705291748,
+						51.3541957192427
+					]
+				},
+				"properties": {
+					"name": "St. Nicholas At Wade."
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						1.3070619106292725,
+						51.2630024580254
+					]
+				},
+				"properties": {
+					"name": "St. Mary The Blessed Virgin, Woodnesborough."
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						1.3431429862976074,
+						51.273467661721156
+					]
+				},
+				"properties": {
+					"name": "St. Clements, Sandwich."
+				}
+			}
+		]
+	},
+	"pubs": {
+		"type": "FeatureCollection",
+		"features": [
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						1.3449668884277344,
+						51.23693314019542
+					]
+				},
+				"properties": {
+					"name": "The Crown, Finglesham."
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						1.3210201263427734,
+						51.24324700496246
+					]
+				},
+				"properties": {
+					"name": "The Blazing Donkey, Eastry."
+				}
+			}
+		]
+	},
+	"castles": {
+		"type": "FeatureCollection",
+		"features": [
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						1.3320493698120117,
+						51.293941418366195
+					]
+				},
+				"properties": {
+					"name": "Richborough Roman Fort and Amphitheatre."
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						1.3212347030639648,
+						51.12959947058639
+					]
+				},
+				"properties": {
+					"name": "Dover Castle."
+				}
+			},
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						1.1973059177398682,
+						51.379053425247115
+					]
+				},
+				"properties": {
+					"name": "Reculver Castle."
+				}
+			}
+		]
+	},
+	"monuments": {
+		"type": "FeatureCollection",
+		"features": [
+			{
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						1.357133388519287,
+						51.32862731392897
+					]
+				},
+				"properties": {
+					"name": "St. Augustine's Cross."
+				}
+			}
+		]
+	}
 }

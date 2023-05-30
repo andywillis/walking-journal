@@ -1,24 +1,25 @@
 .mapContainer {
-  display: flex;
-  flex-direction: column;
-  flex: 2;
-  max-height: 80vh;
-  padding: var(--box-padding);
-  border: var(--box-border);
-  border-radius: var(--box-border-radius);
+	display: flex;
+	flex-direction: column;
+	flex: 2;
+	max-height: 80vh;
+	max-width: 100vw;
+	padding: var(--box-padding);
+	border: var(--box-border);
+	border-radius: var(--box-border-radius);
 
-  & header {
-    border: var(--box-border-medium);
-    height: fit-content;
-    border-radius: var(--box-border-inner-radius-top);
-    & h4 {
-      margin: 0;
-      padding: 0.25rem;
-    }
-  }
+	& header {
+		border: var(--box-border-medium);
+		height: fit-content;
+		border-radius: var(--box-border-inner-radius-top);
+		& h4 {
+			margin: 0;
+			padding: 0.25rem;
+		}
+	}
 
-  #mapid {
-    height: auto;
-  }
+	#mapid {
+		height: auto;
+	}
 
 }

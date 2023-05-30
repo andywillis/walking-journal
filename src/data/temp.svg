@@ -1,7 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34" height="34" width="34">
-  <title>lighthouse.svg</title>
-  <rect fill="none" x="0" y="0" width="34" height="34"></rect>
-  <rect x="1" y="1" rx="4" ry="4" width="31" height="31" stroke="#333" style="stroke-linejoin:round;stroke-miterlimit:4;" fill="#333" stroke-width="3"></rect>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 48" width="34" height="34">
+  <!-- <title>lighthouse.svg</title> -->
+  <rect fill="none" x="0" y="0" width="34" height="42"></rect>
+  <rect x="1" y="1" rx="4" ry="4" width="31" height="31" stroke="#333" style="stroke-linejoin:round;stroke-miterlimit:4;" fill="#333" stroke-width="3"></rect> -->
   <rect x="1" y="1" width="31" height="31" rx="4" ry="4" fill="#fcfcfc"></rect>
+  <polygon points="8,33 17,48 26,33" fill="#333" />
   <path fill="#333" transform="translate(9 9)" d="M14,7.5c0,3.5899-2.9101,6.5-6.5,6.5S1,11.0899,1,7.5S3.9101,1,7.5,1S14,3.9101,14,7.5z"></path>
 </svg>

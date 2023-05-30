@@ -1,5 +1,13 @@
-import { darkMode } from '../store';
+import { darkMode } from '../signals';
 
-export default function useTheme() {
-  document.documentElement.className = darkMode.value ? 'dark' : 'light';
+/**
+ * useTheme
+ *
+ * Alters the root class name depending on the dark mode value
+ *
+ */
+function useTheme() {
+	document.documentElement.className = darkMode.value ? 'dark' : 'light';
 }
+
+export default useTheme;
