@@ -11,7 +11,7 @@
 		"convert": "node --experimental-specifier-resolution=node --experimental-json-modules src/tools/convertGpsPointsToLineString.js id=3 name=Fredville town=Nonnington county=Kent"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.21.8",
+		"@babel/core": "^7.22.1",
 		"@babel/eslint-parser": "^7.21.8",
 		"@babel/plugin-syntax-import-assertions": "^7.20.0",
 		"@preact/preset-vite": "^2.5.0",
@@ -23,7 +23,7 @@
 		"eslint-plugin-preact": "0.1.0",
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"postcss-nesting": "11.2.2",
-		"vite": "^4.3.8",
+		"vite": "^4.3.9",
 		"vite-plugin-compression": "0.5.1"
 	},
 	"dependencies": {
@@ -31,6 +31,6 @@
 		"classnames": "^2.3.2",
 		"leaflet": "1.9.4",
 		"open-props": "^1.5.8",
-		"preact": "^10.15.0"
+		"preact": "^10.15.1"
 	}
 }
