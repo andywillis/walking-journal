@@ -1,6 +1,8 @@
 # Walking Map
 
-An eary prototype map of my walks.
+An early prototype map of my walks.
+
+https://quiet-douhua-784278.netlify.app/
 
 ## Tech
 

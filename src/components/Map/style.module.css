@@ -22,4 +22,9 @@
 		height: auto;
 	}
 
+	& .leaflet-div-icon {
+		background: none;
+		border: none;
+	} 
+
 }
