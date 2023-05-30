@@ -1,5 +1,12 @@
 import iconData from './iconset-all_maki_icons.json' assert { type: 'json'};
 
+/**
+ * buildSvg
+ *
+ * @param {string} path
+ * @param {object} SvgProps { strokeColor, bgColor }
+ * @return {string}
+ */
 function buildSvg(path, { strokeColor, bgColor }) {
 	return `
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34" height="34" width="34" class="marker">
@@ -12,6 +19,12 @@ function buildSvg(path, { strokeColor, bgColor }) {
 	`.trim().replace(/\n\s+/g, '');
 }
 
+/**
+ * addIcons
+ *
+ * @param {array} data
+ * @return {array}
+ */
 function addIcons(data) {
 	return data.map(obj => {
 
