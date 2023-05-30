@@ -214,21 +214,15 @@
 			}
 		]
 	},
-	"markers": {
+	"routeMarkers": {
 		"type": "FeatureCollection",
 		"features": [
 			{
 				"type": "Feature",
 				"properties": {
 					"name": "Start",
-					"icons": {
-						"png": {
-							"name": "start"
-						},
-						"maki": {
-							"name": "circle-stroked"
-						}
-					}
+					"number": "1",
+					"description": ""
 				},
 				"geometry": {
 					"type": "Point",
@@ -242,14 +236,8 @@
 				"type": "Feature",
 				"properties": {
 					"name": "Finish",
-					"icons": {
-						"png": {
-							"name": "finish"
-						},
-						"maki": {
-							"name": "circle"
-						}
-					}
+					"number": "2",
+					"description": ""
 				},
 				"geometry": {
 					"type": "Point",
@@ -258,20 +246,17 @@
 						51.14776960154373
 					]
 				}
-			},
+			}
+		]
+	},
+	"featureMarkers": {
+		"type": "featureCollection",
+		"features": [
 			{
 				"type": "Feature",
 				"properties": {
-					"name": "Lighthouse",
-					"icons": {
-						"png": {
-							"name": "lighthouse"
-						},
-						"maki": {
-							"name": "lighthouse"
-						}
-					},
-					"label": "South Foreland Lighthouse",
+					"name": "South Foreland Lighthouse",
+					"icon": "lighthouse",
 					"description": ""
 				},
 				"geometry": {
@@ -285,15 +270,8 @@
 			{
 				"type": "Feature",
 				"properties": {
-					"icons": {
-						"png": {
-							"name": "castle"
-						},
-						"maki": {
-							"name": "castle"
-						}
-					},
-					"label": "Dover Castle",
+					"name": "Dover Castle",
+					"icon": "castle",
 					"description": ""
 				},
 				"geometry": {
@@ -647,50 +625,21 @@
 			}
 		]
 	},
-	"markers": {
+	"routeMarkers": {
 		"type": "FeatureCollection",
 		"features": [
 			{
 				"type": "Feature",
 				"properties": {
 					"name": "Start",
-					"icons": {
-						"png": {
-							"name": "start"
-						},
-						"maki": {
-							"name": "circle-stroked"
-						}
-					}
-				},
-				"geometry": {
-					"type": "Point",
-					"coordinates": [
-						1.3364746304017672,
-						51.275701537684995
-					]
-				}
-			},
-			{
-				"type": "Feature",
-				"properties": {
-					"name": "Bridge",
-					"icons": {
-						"png": {
-							"name": "bridge_old"
-						},
-						"maki": {
-							"name": "bridge"
-						}
-					},
-					"label": "Sluice Bridge",
+					"number": "1",
 					"description": ""
 				},
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						1.347927610445367,
-						51.27406604074224
+						1.3823466660461747,
+						51.14776960154373
 					]
 				}
 			},
@@ -698,20 +647,34 @@
 				"type": "Feature",
 				"properties": {
 					"name": "Finish",
-					"icons": {
-						"png": {
-							"name": "finish"
-						},
-						"maki": {
-							"name": "circle"
-						}
-					}
+					"number": "2",
+					"description": ""
 				},
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						1.3364746304017672,
-						51.275701537684995
+						1.3823466660461747,
+						51.14776960154373
+					]
+				}
+			}
+		]
+	},
+	"featureMarkers": {
+		"type": "featureCollection",
+		"features": [
+			{
+				"type": "Feature",
+				"properties": {
+					"name": "Sluice Bridge",
+					"icon": "bridge",
+					"description": ""
+				},
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						1.347927610445367,
+						51.27406604074224
 					]
 				}
 			}
@@ -1048,27 +1011,21 @@
 			}
 		]
 	},
-	"markers": {
+	"routeMarkers": {
 		"type": "FeatureCollection",
 		"features": [
 			{
 				"type": "Feature",
 				"properties": {
 					"name": "Start",
-					"icons": {
-						"png": {
-							"name": "start"
-						},
-						"maki": {
-							"name": "circle-stroked"
-						}
-					}
+					"number": "1",
+					"description": ""
 				},
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						1.232337835580994,
-						51.22212794445777
+						1.3823466660461747,
+						51.14776960154373
 					]
 				}
 			},
@@ -1076,37 +1033,28 @@
 				"type": "Feature",
 				"properties": {
 					"name": "Finish",
-					"icons": {
-						"png": {
-							"name": "finish"
-						},
-						"maki": {
-							"name": "circle"
-						}
-					}
+					"number": "2",
+					"description": ""
 				},
 				"geometry": {
 					"type": "Point",
 					"coordinates": [
-						1.2319507660658113,
-						51.22208298449252
+						1.3823466660461747,
+						51.14776960154373
 					]
 				}
-			},
+			}
+		]
+	},
+	"featureMarkers": {
+		"type": "FeatureCollection",
+		"features": [
 			{
 				"type": "Feature",
 				"properties": {
-					"name": "Ancient Tree",
-					"icons": {
-						"png": {
-							"name": "tree"
-						},
-						"maki": {
-							"name": "natural"
-						}
-					},
-					"label": "Majesty Oak",
-					"description": "700 year-old Oak"
+					"name": "Majesty Oak",
+					"icon": "natural",
+					"description": ""
 				},
 				"geometry": {
 					"type": "Point",

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <circle cx="24" cy="24" r="24" fill="#fcfcfc" />
+  <circle cx="24" cy="24" r="21" fill="#333" />
+  <text x="24" y="32" text-anchor="middle" alignment-baseline="middle" fill="#fcfcfc" style="font-size: 1.4rem;font-weight:400">
+    100
+  </text>
+</svg>
+
+<!--
+3 - x: 24, y: 32, font-size: 1.4rem
+2 - x: 25, y: 34, font-size: 1.7rem
+1 - x: 25, y: 34, font-size: 1.9rem
+-->

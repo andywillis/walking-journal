@@ -26,24 +26,41 @@ function updateMap(geoData, currentWalk, darkMode, mapRef) {
 		}
 	});
 
-	const markers = walk.markers.features.map(marker => {
+	const featureMarkers = walk.featureMarkers.features.map(marker => {
 
 		const {
 			geometry: { coordinates },
-			properties: { icons: { svg } }
+			properties: { icons }
 		} = marker;
 
 		const [ lng, lat ] = coordinates;
 
 		return L.marker([ lat, lng ], {
 			icon: L.divIcon({
-				html: svg.html[darkMode ? 'dark' : 'light']
+				html: icons[darkMode ? 'dark' : 'light']
 			})
 		});
 
 	});
 
-	L.featureGroup([ route, ...markers ]).addTo(mapRef.current);
+	const routeMarkers = walk.routeMarkers.features.map(marker => {
+
+		const {
+			geometry: { coordinates },
+			properties: { icons }
+		} = marker;
+
+		const [ lng, lat ] = coordinates;
+
+		return L.marker([ lat, lng ], {
+			icon: L.divIcon({
+				html: icons[darkMode ? 'dark' : 'light']
+			})
+		});
+
+	});
+
+	L.featureGroup([ route, ...featureMarkers, ...routeMarkers ]).addTo(mapRef.current);
 
 	mapRef.current.fitBounds(route.getBounds());
 

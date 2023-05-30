@@ -1,7 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24" height="24">
-  <circle cx="24" cy="24" r="24" fill="#333" />
-  <circle cx="24" cy="24" r="21" fill="#fff" />
-  <text x="24" y="30" text-anchor="middle" alignment-baseline="middle" style="color: #333; font-size: 1.2rem;font-weight:400">
-    2
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28">
+  <rect fill="none" x="0" y="0" width="28" height="28"></rect>
+  <circle cx="14" cy="14" r="14" fill="#333" />
+  <circle cx="14" cy="14" r="12" fill="#fcfcfc" />
+  <text x="14" y="19" text-anchor="middle" alignment-baseline="middle" fill="#333" style="font-size: 0.9rem;font-weight:400">
+    1
   </text>
 </svg>
