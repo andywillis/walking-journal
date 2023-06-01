@@ -1,5 +1,7 @@
 import * as L from 'leaflet';
 
+import { visibleGroup } from '../signals';
+
 import { createMarkers } from '../helpers';
 
 /**
@@ -10,14 +12,17 @@ import { createMarkers } from '../helpers';
  * information to add routes and markers to the map
  *
  * @param {object} geoData
- * @param {number} currentWalk
+ * @param {number} selectedWalk
  * @param {boolean} darkMode
  * @param {object} mapRef
  */
-function updateMap(geoData, currentWalk, darkMode, mapRef) {
+function updateMap(walks, selectedWalk, darkMode, mapRef) {
 
-	const walk = geoData.find(obj => {
-		return obj.id === currentWalk;
+	// Remove the visible group
+	if (visibleGroup.peek()) visibleGroup.peek().remove();
+
+	const walk = walks.find(obj => {
+		return obj.id === selectedWalk;
 	});
 
 	const route = L.geoJSON(walk.route, {
@@ -28,12 +33,24 @@ function updateMap(geoData, currentWalk, darkMode, mapRef) {
 		}
 	});
 
-	const featureMarkers = createMarkers(walk.landmarkMarkers.features, darkMode);
-	const routeMarkers = createMarkers(walk.routeMarkers.features, darkMode);
+	const group = L.featureGroup([route]);
 
-	L.featureGroup([ route, ...featureMarkers, ...routeMarkers ]).addTo(mapRef.current);
+	if (walk.landmarkMarkers) {
+		const landmarkMarkers = createMarkers(walk.landmarkMarkers.features, darkMode);
+		landmarkMarkers.forEach(marker => marker.addTo(group));
+	}
 
-	mapRef.current.fitBounds(route.getBounds());
+	if (walk.routeMarkers) {
+		const routeMarkers = createMarkers(walk.routeMarkers.features, darkMode);
+		routeMarkers.forEach(marker => marker.addTo(group));
+	}
+
+	// Add the current group to state
+	visibleGroup.value = group;
+
+	group.addTo(mapRef.current);
+
+	mapRef.current.fitBounds(group.getBounds());
 
 }
 

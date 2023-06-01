@@ -1,7 +1,7 @@
 {
   "name": "Walks",
   "version": "0.0.1",
-  "totalDistance": 9.31,
+  "totalDistance": 10.59,
   "unit": "mi",
   "walks": [
     {
@@ -282,25 +282,6 @@
               "coordinates": [
                 1.371146633986384,
                 51.140433869437096
-              ]
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "name": "Dover Castle",
-              "icon": "castle",
-              "description": "",
-              "icons": {
-                "light": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 34 34\" height=\"34\" width=\"34\" class=\"marker\"><rect fill=\"none\" x=\"0\" y=\"0\" width=\"34\" height=\"34\" /><rect x=\"1\" y=\"1\" rx=\"4\" ry=\"4\" width=\"31\" height=\"31\" stroke=\"#333\" style=\"stroke-linejoin:round;stroke-miterlimit:4;\" fill=\"#333\" stroke-width=\"3\" /><rect x=\"1\" y=\"1\" width=\"31\" height=\"31\" rx=\"4\" ry=\"4\" fill=\"#fcfcfc\" /><path fill=\"#333\" transform=\"translate(9 9)\" d=\"M11,4H4C3.4477,4,3,3.5523,3,3V0.5C3,0.2239,3.2239,0,3.5,0S4,0.2239,4,0.5V2h1V1c0-0.5523,0.4477-1,1-1s1,0.4477,1,1v1h1V1c0-0.5523,0.4477-1,1-1s1,0.4477,1,1v1h1V0.5C11,0.2239,11.2239,0,11.5,0S12,0.2239,12,0.5V3C12,3.5523,11.5523,4,11,4z M14,14.5c0,0.2761-0.2239,0.5-0.5,0.5h-12C1.2239,15,1,14.7761,1,14.5S1.2239,14,1.5,14H2c0.5523,0,1-0.4477,1-1c0,0,1-6,1-7c0-0.5523,0.4477-1,1-1h5c0.5523,0,1,0.4477,1,1c0,1,1,7,1,7c0,0.5523,0.4477,1,1,1h0.5c0.2723-0.0001,0.4946,0.2178,0.5,0.49V14.5z M9,10.5C9,9.6716,8.3284,9,7.5,9S6,9.6716,6,10.5V14h3V10.5z\" /></svg>",
-                "dark": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 34 34\" height=\"34\" width=\"34\" class=\"marker\"><rect fill=\"none\" x=\"0\" y=\"0\" width=\"34\" height=\"34\" /><rect x=\"1\" y=\"1\" rx=\"4\" ry=\"4\" width=\"31\" height=\"31\" stroke=\"#333\" style=\"stroke-linejoin:round;stroke-miterlimit:4;\" fill=\"#333\" stroke-width=\"3\" /><rect x=\"1\" y=\"1\" width=\"31\" height=\"31\" rx=\"4\" ry=\"4\" fill=\"#fcfcfc\" /><path fill=\"#333\" transform=\"translate(9 9)\" d=\"M11,4H4C3.4477,4,3,3.5523,3,3V0.5C3,0.2239,3.2239,0,3.5,0S4,0.2239,4,0.5V2h1V1c0-0.5523,0.4477-1,1-1s1,0.4477,1,1v1h1V1c0-0.5523,0.4477-1,1-1s1,0.4477,1,1v1h1V0.5C11,0.2239,11.2239,0,11.5,0S12,0.2239,12,0.5V3C12,3.5523,11.5523,4,11,4z M14,14.5c0,0.2761-0.2239,0.5-0.5,0.5h-12C1.2239,15,1,14.7761,1,14.5S1.2239,14,1.5,14H2c0.5523,0,1-0.4477,1-1c0,0,1-6,1-7c0-0.5523,0.4477-1,1-1h5c0.5523,0,1,0.4477,1,1c0,1,1,7,1,7c0,0.5523,0.4477,1,1,1h0.5c0.2723-0.0001,0.4946,0.2178,0.5,0.49V14.5z M9,10.5C9,9.6716,8.3284,9,7.5,9S6,9.6716,6,10.5V14h3V10.5z\" /></svg>"
-              }
-            },
-            "geometry": {
-              "type": "Point",
-              "coordinates": [
-                1.3213203403986524,
-                51.129605877658896
               ]
             }
           }
@@ -1115,6 +1096,173 @@
         ]
       },
       "distance": 2.77,
+      "unit": "mi"
+    },
+    {
+      "id": 4,
+      "name": "The Rope Walk",
+      "town": "Sandwich",
+      "county": "Kent",
+      "dates": [
+        "01/06/2023"
+      ],
+      "style": {
+        "route": {
+          "color": "orange"
+        }
+      },
+      "route": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  1.3365982,
+                  51.2760445
+                ],
+                [
+                  1.33749671,
+                  51.27663648
+                ],
+                [
+                  1.33842164,
+                  51.27706744
+                ],
+                [
+                  1.33895601,
+                  51.27731112
+                ],
+                [
+                  1.33999072,
+                  51.27617163
+                ],
+                [
+                  1.34101731,
+                  51.27608844
+                ],
+                [
+                  1.3422195,
+                  51.27565548
+                ],
+                [
+                  1.3435645,
+                  51.27546429
+                ],
+                [
+                  1.3448761,
+                  51.27507626
+                ],
+                [
+                  1.34582923,
+                  51.27472118
+                ],
+                [
+                  1.34643887,
+                  51.27402372
+                ],
+                [
+                  1.34598729,
+                  51.27377298
+                ],
+                [
+                  1.34505786,
+                  51.27303884
+                ],
+                [
+                  1.34399711,
+                  51.27242024
+                ],
+                [
+                  1.3423977,
+                  51.2721566
+                ],
+                [
+                  1.34164967,
+                  51.27196213
+                ],
+                [
+                  1.34002341,
+                  51.27196198
+                ],
+                [
+                  1.3392647,
+                  51.2726324
+                ],
+                [
+                  1.33795404,
+                  51.27277648
+                ],
+                [
+                  1.33672025,
+                  51.27340336
+                ],
+                [
+                  1.33608318,
+                  51.27439316
+                ],
+                [
+                  1.33575239,
+                  51.27537965
+                ],
+                [
+                  1.335588199798849,
+                  51.275629259812874
+                ],
+                [
+                  1.3364652856292225,
+                  51.27610243152091
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "routeMarkers": {
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Start",
+              "number": "1",
+              "description": "",
+              "icons": {
+                "light": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 28 28\" width=\"28\" height=\"28\"><rect fill=\"none\" x=\"0\" y=\"0\" width=\"28\" height=\"28\" /><circle cx=\"14\" cy=\"14\" r=\"14\" fill=\"#333\" /><circle cx=\"14\" cy=\"14\" r=\"12\" fill=\"#fcfcfc\" /><text x=\"14\" y=\"19\" text-anchor=\"middle\" alignment-baseline=\"middle\" fill=\"#333\" style=\"font-size: 0.9rem; font-weight:400\">1</text></svg>",
+                "dark": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 28 28\" width=\"28\" height=\"28\"><rect fill=\"none\" x=\"0\" y=\"0\" width=\"28\" height=\"28\" /><circle cx=\"14\" cy=\"14\" r=\"14\" fill=\"#fcfcfc\" /><circle cx=\"14\" cy=\"14\" r=\"12\" fill=\"#333\" /><text x=\"14\" y=\"19\" text-anchor=\"middle\" alignment-baseline=\"middle\" fill=\"#fcfcfc\" style=\"font-size: 0.9rem; font-weight:400\">1</text></svg>"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                1.3365982,
+                51.2760445
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Finish",
+              "number": "2",
+              "description": "",
+              "icons": {
+                "light": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 28 28\" width=\"28\" height=\"28\"><rect fill=\"none\" x=\"0\" y=\"0\" width=\"28\" height=\"28\" /><circle cx=\"14\" cy=\"14\" r=\"14\" fill=\"#333\" /><circle cx=\"14\" cy=\"14\" r=\"12\" fill=\"#fcfcfc\" /><text x=\"14\" y=\"19\" text-anchor=\"middle\" alignment-baseline=\"middle\" fill=\"#333\" style=\"font-size: 0.9rem; font-weight:400\">2</text></svg>",
+                "dark": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 28 28\" width=\"28\" height=\"28\"><rect fill=\"none\" x=\"0\" y=\"0\" width=\"28\" height=\"28\" /><circle cx=\"14\" cy=\"14\" r=\"14\" fill=\"#fcfcfc\" /><circle cx=\"14\" cy=\"14\" r=\"12\" fill=\"#333\" /><text x=\"14\" y=\"19\" text-anchor=\"middle\" alignment-baseline=\"middle\" fill=\"#fcfcfc\" style=\"font-size: 0.9rem; font-weight:400\">2</text></svg>"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                1.3364652856292225,
+                51.27610243152091
+              ]
+            }
+          }
+        ]
+      },
+      "distance": 1.28,
       "unit": "mi"
     }
   ]

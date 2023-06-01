@@ -8,13 +8,13 @@ import {
 	totalWalks,
 	totalDistance,
 	totalJourneys,
-	currentWalk
+	selectedWalk
 } from '../../signals';
 
 import style from './style.module.css';
 
 function handleWalk(id) {
-	currentWalk.value = Number(id);
+	selectedWalk.value = Number(id);
 }
 
 /**
@@ -57,7 +57,7 @@ function Details() {
 						<PanelItem
 							key={id}
 							id={id}
-							walkId={currentWalk.value}
+							walkId={selectedWalk.value}
 							handleClick={handleWalk}
 						>
 							<span>{name}</span>

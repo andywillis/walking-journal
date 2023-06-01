@@ -27,6 +27,8 @@ function buildSvg(path, mode = 'light') {
 function addLandmarkIcons(data) {
 	return data.map(obj => {
 
+		if (!obj.landmarkMarkers) return obj;
+
 		return {
 
 			...obj,

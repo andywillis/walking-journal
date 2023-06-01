@@ -26,6 +26,8 @@ function buildSvg(number, mode = 'light') {
 function addRouteIcons(data) {
 	return data.map(obj => {
 
+		if (!obj.routeMarkers) return obj;
+
 		return {
 
 			...obj,
