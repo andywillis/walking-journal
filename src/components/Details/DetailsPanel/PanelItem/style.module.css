@@ -1,0 +1,33 @@
+.item {
+	
+	display: flex;
+	background-color: var(--button-background-color);
+	color: var(--button-text-color);
+	font-size: 1rem;
+	padding: var(--box-padding);
+	border: 1px solid var(--gray-4);
+
+	&:first-of-type {
+		margin-top: 0.2rem;
+	}
+
+	&:not(:first-of-type) {
+		margin: 0.1rem 0;
+	}
+	
+	& span:nth-child(2) {
+		margin-left: auto;
+	}
+
+	&:hover {
+		cursor: pointer;
+		background-color: var(--button-background-negative-color);
+		color: var(--button-text-negative-color);
+	}
+
+}
+
+& .highlighted {
+	background-color: var(--button-background-negative-color);
+	color: var(--button-text-negative-color);
+}

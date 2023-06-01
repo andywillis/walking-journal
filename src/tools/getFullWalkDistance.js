@@ -13,11 +13,13 @@ function getFullWalkDistance(data, unit) {
 		for (let i = 1; i < coordinates.length; i++) {
 			distance += getGeoDataDistance(coordinates[i - 1], coordinates[i], unit);
 		}
+
 		return {
 			...obj,
 			distance: toTwoDecimalPlaces(distance),
 			unit
 		};
+
 	});
 }
 
