@@ -1,19 +1,9 @@
 .panel {
   display: flex;
   flex-direction: column;
-  scrollbar-gutter: auto;
-
-  & header {
-    height: fit-content;
-    border: var(--box-border-medium);
-    border-radius: var(--box-border-inner-radius-top);
-
-    & h4 {
-      text-transform: uppercase;
-      margin: 0;
-      padding: 0.25rem;
-    }
-
+  
+  &:not(:first-child) {
+    margin-top: var(--box-margin);
   }
 
 }

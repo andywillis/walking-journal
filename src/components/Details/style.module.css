@@ -2,9 +2,45 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  max-height: 80vh;
+  max-height: 50vw;
   max-width: 100vw;
   padding: var(--box-padding);
   border: var(--box-border);
   border-radius: var(--box-border-radius);
+  overflow-y: auto;
+  scrollbar-width: none;
+  scrollbar-gutter: auto;
+
+  & .detailsHeader {
+    display: flex;
+    padding: var(--box-padding) 0; 
+    border-bottom: var(--box-border-medium);
+    margin-bottom: var(--box-margin);
+    align-items: center;
+
+    & h4 {
+      font-size: 1.35rem;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+  }
+
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) {
+	.details {
+    max-height: 100vw;
+    max-width: 30vw;
+  
+    & .detailsHeader {
+
+      & h4 {
+        font-size: 1rem;
+      }
+    
+    }
+
+  }
 }

@@ -1,14 +1,18 @@
-import Details from '../Details';
-import Map from '../Map';
+import { Details, Map } from '../components';
+
+import useTheme from '../hooks/useTheme';
 
 import style from './style.module.css';
 
 /**
- * Main
+ * App
  *
  * @return {React.ReactElement}
  */
-function Main() {
+function App() {
+
+	useTheme();
+
 	return (
 		<main class={style.main}>
 			<Details />
@@ -17,4 +21,4 @@ function Main() {
 	);
 }
 
-export default Main;
+export default App;

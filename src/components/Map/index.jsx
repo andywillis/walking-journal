@@ -3,7 +3,7 @@ import { effect } from '@preact/signals';
 
 import * as L from 'leaflet';
 
-import { geoData, currentWalk, darkMode } from '../../signals';
+import { walks, currentWalk, darkMode } from '../../signals';
 
 import updateMap from '../../effects/updateMap';
 
@@ -41,7 +41,7 @@ function Map() {
 		// Signals effect that updates the map by
 		// adding subscriptions to various signal values
 		effect(() => updateMap(
-			geoData.peek(),
+			walks.peek(),
 			currentWalk.value,
 			darkMode.value,
 			mapRef

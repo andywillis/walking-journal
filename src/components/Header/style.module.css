@@ -1,12 +1,16 @@
 .header {
 	display: flex;
 	min-height: 13vh;
-	max-height: 18vh;
+	max-height: 15vh;
+
 	& h1 {
-		margin: 0;
+		font-size: 2.6rem;
+		line-height: 0.5;
 	}
+	
 	& .icons {
 		margin-left: auto;
 		align-self: center;
 	}
+
 }
