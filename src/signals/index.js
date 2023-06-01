@@ -8,13 +8,15 @@ export const darkMode = signal(false);
 
 export const store = signal(data);
 
-export const totalDistance = computed(() => {
-	const { totalDistance, unit } = store.value;
-	return { distance: totalDistance, unit };
-});
+export const selectedWalk = signal(1);
 
 export const walks = computed(() => {
 	return store.value.walks;
+});
+
+export const totalDistance = computed(() => {
+	const { totalDistance, unit } = store.value;
+	return { distance: totalDistance, unit };
 });
 
 export const totalWalks = computed(() => {
@@ -28,4 +30,4 @@ export const totalJourneys = computed(() => {
 	}, 0);
 });
 
-export const currentWalk = signal(1);
+export const visibleGroup = signal(undefined);
