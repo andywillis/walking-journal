@@ -12,8 +12,7 @@ export default defineConfig({
 	root: 'src',
 	resolve: {
 		alias: {
-			react: 'preact/compat',
-			'@': 'src',
+			react: 'preact/compat'
 		}
 	},
 	css: {

@@ -3,7 +3,7 @@
 	"name": "The Pines to Fan Bay",
 	"town": "St. Margaret's Bay",
 	"county": "Kent",
-	"dates": [],
+	"dates": ["26/05/23"],
 	"style": {
 		"route": {
 			"color": "orange"
@@ -287,10 +287,10 @@
 },
 {
 	"id": 2,
-	"name": "The Circuit",
+	"name": "Sandwich Circuit",
 	"town": "Sandwich",
 	"county": "Kent",
-	"dates": [],
+	"dates": ["25/05/23"],
 	"style": {
 		"route": {
 			"color": "orange"

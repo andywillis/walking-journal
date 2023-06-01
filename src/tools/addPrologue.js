@@ -10,7 +10,8 @@ import { toTwoDecimalPlaces } from './getFullWalkDistance';
 function addPrologue(data, unit = 'mi') {
 	
 	const totalDistance = toTwoDecimalPlaces(data.reduce((acc, walk) => {
-		acc += walk.distance;
+		const { distance, dates } = walk;
+		acc += (distance * dates.length);
 		return acc;
 	}, 0));
 	
