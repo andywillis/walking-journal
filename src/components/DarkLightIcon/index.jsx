@@ -1,6 +1,12 @@
 import classNames from 'classnames';
 
+import { darkMode } from '../../signals';
+
 import style from './index.module.css';
+
+function handleDarkLightMode() {
+	darkMode.value = !darkMode.peek();
+}
 
 /**
  * DarkLightIcon
@@ -8,17 +14,16 @@ import style from './index.module.css';
  * @param {Object} { mode, label, handleClick, disabled }
  * @return {React.ReactElement}
  */
-function DarkLightIcon({ mode, label, handleClick, disabled }) {
+function DarkLightIcon() {
 
-	const cn = classNames([ style.icon, style[mode] ]);
+	const cn = classNames([ style.icon, style[darkMode.value ? 'dark' : 'light'] ]);
 
 	return (
 		<button
 			type="button"
-			aria-label={label}
+			aria-label="Switch light/dark mode"
 			class={cn}
-			onClick={handleClick}
-			disabled={disabled}
+			onClick={handleDarkLightMode}
 		/>
 	);
 

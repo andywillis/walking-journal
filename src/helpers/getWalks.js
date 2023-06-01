@@ -7,10 +7,10 @@
  * @param {array} walks - array of walks
  * @return {array}
  */
-function getWalks(walks) {
-	return walks.map(walk => {
-		const { id, name, distance, unit } = walk;
-		return { id, name, distance, unit };
+function getWalks(store) {
+	return store.walks.map(walk => {
+		const { id, name, distance, unit, dates } = walk;
+		return { id, name, distance, unit, dates };
 	});
 }
 

@@ -5,19 +5,10 @@ import style from './style.module.css';
  *
  * @return {React.ReactElement}
  */
-function DetailsPanel(props) {
-
-	const { title, children } = props;
-
+function DetailsPanel({ children }) {
 	return (
 		<section class={style.panel}>
-
-			<header>
-				<h4>{title}</h4>
-			</header>
-
 			{children}
-	
 		</section>
 	);
 }

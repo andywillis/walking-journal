@@ -11,7 +11,7 @@ function handleClick() {
 function Header() {
 	return (
 		<header class={style.header}>
-			<h1>Walking Map</h1>
+			<h1>Journey Journal</h1>
 			<section class={style.icons}>
 				<DarkLightIcon
 					mode={darkMode.peek() ? 'dark' : 'light'}
