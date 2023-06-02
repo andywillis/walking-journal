@@ -50,5 +50,7 @@
 	--yellow-6: hsl(var(--yellow-6-hsl));
 	--yellow-7: hsl(var(--yellow-7-hsl));
 	--yellow-8: hsl(var(--yellow-8-hsl));
-	
+
+	--map-dark: #303030;
+
 }

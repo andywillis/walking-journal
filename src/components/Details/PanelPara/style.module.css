@@ -1,9 +1,9 @@
 .para {
 	
+	color: var(--theme-item-text-color);
 	display: flex;
-	color: var(--button-text-color);
-	font-size: 1rem;
-	margin: 0.25rem 0;
+	font-size: calc(var(--size-rem-lg) * 1.3);
+	margin: var(--size-rem-sm) 0;
 
 	& span:nth-child(2) {
 		margin-left: auto;
@@ -14,6 +14,6 @@
 /* Tablet and Smaller Desktop */
 @media (min-width: 650px) {
 	.para {
-		font-size: 0.9rem;
+		font-size: calc(var(--size-rem-lg) * 0.9);
 	}
 }

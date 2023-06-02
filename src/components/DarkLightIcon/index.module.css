@@ -6,7 +6,7 @@
 	height: 32px;
 	margin-left: auto;
 	background-color: transparent;
-	border-radius: var(--box-border-radius);
+	border-radius: var(--size-px-5);
 	
 	&:hover:not(:disabled) {
 		cursor: pointer;
