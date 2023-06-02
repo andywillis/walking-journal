@@ -3,7 +3,7 @@
   flex-direction: column;
   
   &:not(:first-child) {
-    margin-top: var(--box-margin);
+    margin-top: var(--margin-md);
   }
 
 }

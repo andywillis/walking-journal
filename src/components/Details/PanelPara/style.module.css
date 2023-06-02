@@ -1,7 +1,7 @@
 .para {
 	
 	display: flex;
-	color: var(--button-text-color);
+	color: var(--theme-item-text-color);
 	font-size: 1rem;
 	margin: 0.25rem 0;
 

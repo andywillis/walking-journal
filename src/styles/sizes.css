@@ -1,0 +1,30 @@
+:root {
+	
+	/* Padding */
+
+	--padding-sm: 0.25rem;
+	--padding-md: 0.5rem;
+	--padding-lg: 1rem;
+	--padding-xl: 1.5rem;
+
+	/* Margin */
+
+	--margin-sm: 0.25rem;
+	--margin-md: 0.5rem;
+	--margin-lg: 1rem;
+	--margin-xl: 1.5rem;
+
+  /* Borders */
+
+	--border-size-sm: 1px;
+	--border-size-md: 2px;
+
+	--border-radius-sm: 2px;
+	--border-radius-md: 5px;
+	--border-radius-lg: 8px;
+
+	/* Text */
+
+	--text-line-height: 1.5;
+
+}

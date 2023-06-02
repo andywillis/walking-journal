@@ -1,12 +1,11 @@
 .item {
 	
 	display: flex;
-	background-color: var(--button-background-color);
-	color: var(--button-text-color);
+	background-color: var(--theme-item-bg-color);
+	color: var(--theme-item-text-color);
 	font-size: 1rem;
-	padding: var(--box-padding);
+	padding: var(--padding-sm);
 	border: 1px solid var(--gray-4);
-	/* border-radius: var(--box-border-radius); */
 
 	&:first-of-type {
 		margin-top: 0.2rem;
@@ -22,15 +21,15 @@
 
 	&:hover {
 		cursor: pointer;
-		background-color: var(--button-background-negative-color);
-		color: var(--button-text-negative-color);
+		background-color: var(--theme-item-highlight-bg-color);
+		color: var(--theme-item-highlight-text-color);
 	}
 
 }
 
 & .highlighted {
-	background-color: var(--button-background-negative-color);
-	color: var(--button-text-negative-color);
+	background-color: var(--theme-item-highlight-bg-color);
+	color: var(--theme-item-highlight-text-color);
 }
 
 /* Tablet and Smaller Desktop */
