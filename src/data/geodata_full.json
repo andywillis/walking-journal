@@ -6,7 +6,7 @@
   "walks": [
     {
       "id": 1,
-      "name": "The Pines to Fan Bay",
+      "name": "Pines to Fan Bay",
       "town": "St. Margaret's Bay",
       "county": "Kent",
       "dates": [
@@ -1100,7 +1100,7 @@
     },
     {
       "id": 4,
-      "name": "The Rope Walk",
+      "name": "Rope Walk",
       "town": "Sandwich",
       "county": "Kent",
       "dates": [
