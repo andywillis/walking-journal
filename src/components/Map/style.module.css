@@ -1,12 +1,15 @@
 .mapContainer {
 	display: flex;
 	/* flex-direction: column; */
-	min-height: 45vh;
-	max-width: 94vw;
+	flex: 1;
+	min-height: calc(50vh - 1.5rem);
+	/* max-height: calc(45vh - 2rem); */
+	max-width: 100vw;
 	/* max-height: 45vh; */
 	padding: var(--box-padding);
 	border: var(--box-border);
 	border-radius: var(--box-border-radius);
+  scrollbar-width: none;
 
 	& header {
 		border: var(--box-border-medium);
@@ -32,7 +35,6 @@
 /* Tablet and Smaller Desktop */
 @media (min-width: 721px) {
 	.mapContainer {
-		/* flex-direction: row; */
     max-height: 100vw;
     min-width: 70vw;
 	}
