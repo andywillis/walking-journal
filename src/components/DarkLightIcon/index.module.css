@@ -35,7 +35,7 @@
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 701px) {
+@media (min-width: 650px) {
 	.icon {
 		background-size: 22px 22px;
 		width: 36px;

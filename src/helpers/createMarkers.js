@@ -8,7 +8,7 @@ import * as L from 'leaflet';
  * @return {array}
  */
 function createMarkers(data, darkMode) {
-	
+
 	return data.map(marker => {
 
 		const {
@@ -16,6 +16,8 @@ function createMarkers(data, darkMode) {
 			properties: { icons }
 		} = marker;
 	
+		console.log(darkMode, icons[darkMode ? 'dark' : 'light']);
+
 		const [ lng, lat ] = coordinates;
 	
 		return L.marker([ lat, lng ], {

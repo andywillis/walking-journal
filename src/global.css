@@ -60,6 +60,7 @@
 
 	--box-border-medium: var(--border-box-width) solid var(--blue-4);
 	--box-border: var(--border-box-width) solid var(--gray-8);
+	--box-border-light: var(--border-box-width) solid var(--gray-4);
 	--negative-color: var(var(--gray-0));
 
 	--button-background-color: var(--gray-1);
