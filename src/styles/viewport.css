@@ -1,0 +1,11 @@
+:root {
+
+	--viewport-height-50: 50vh;
+	--viewport-height-100: 100vh;
+
+	--viewport-width-35: 35vw;
+	--viewport-width-50: 50vw;
+	--viewport-width-75: 70vw;
+	--viewport-width-100: 100vw;
+
+}

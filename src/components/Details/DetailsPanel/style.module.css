@@ -3,7 +3,7 @@
   flex-direction: column;
   
   &:not(:first-child) {
-    margin-top: var(--margin-md);
+    margin-top: var(--size-rem-md);
   }
 
 }
