@@ -40,8 +40,8 @@ function Details() {
 					<span>{totalJourneys.value}</span>
 				</PanelPara>
 				<PanelPara>
-					<span>Total distance travelled</span>
-					<span>{totalDistance.value.distance} {totalDistance.value.unit}</span>
+					<span>Total distance</span>
+					<span>{totalDistance.value.distance}{totalDistance.value.unit}</span>
 				</PanelPara>
 			</DetailsPanel>
 

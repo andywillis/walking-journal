@@ -23,8 +23,8 @@ export default defineConfig({
 		}
 	},
 	server: {
-		open: true,
 		port: 3000,
+		open: true,
 		// proxy: {
 		//   '/endpoint': {
 		//     target: 'http://localhost:4000',

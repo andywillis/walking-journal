@@ -2,7 +2,7 @@
 	
 	display: flex;
 	color: var(--button-text-color);
-	font-size: 1.3rem;
+	font-size: 1rem;
 	margin: 0.25rem 0;
 
 	& span:nth-child(2) {
@@ -12,7 +12,7 @@
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 701px) {
+@media (min-width: 650px) {
 	.para {
 		font-size: 0.9rem;
 	}
