@@ -1,4 +1,4 @@
-import getGeoDataDistance from './getGeoDataDistance';
+import getGeoDataDistance from './getGeoDataDistance.js';
 
 export function toTwoDecimalPlaces(distance) {
 	return Number.parseFloat((Math.round(distance * 100) / 100).toFixed(2));

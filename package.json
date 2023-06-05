@@ -11,7 +11,7 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"buildJson": "node --experimental-specifier-resolution=node --experimental-json-modules src/tools/buildCompleteJson.js",
-		"convert": "node --experimental-specifier-resolution=node --experimental-json-modules src/tools/convertGpsPointsToLineString.js id=4 name=\"The Rope Walk\" town=Sandwich county=Kent"
+		"convert": "node --experimental-specifier-resolution=node --experimental-json-modules src/tools/routeConverter.js name=\"The Rope Walk\" town=Sandwich county=Kent"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.22.1",
