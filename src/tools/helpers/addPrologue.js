@@ -1,4 +1,4 @@
-import { toTwoDecimalPlaces } from './getFullWalkDistance';
+import { toTwoDecimalPlaces } from './getFullWalkDistance.js';
 
 /**
  * addPrologue
