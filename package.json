@@ -10,7 +10,7 @@
 		"dev": "vite",
 		"build": "vite build",
 		"preview": "vite preview",
-		"update": "node rebuildCompleteJson.js name=\"To Sandwich Bay\" town=Sandwich county=Kent"
+		"update": "node src/tools/rebuildCompleteJson.js name=\"To Sandwich Bay\" town=Sandwich county=Kent"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.22.1",

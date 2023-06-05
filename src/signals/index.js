@@ -1,6 +1,6 @@
 import { signal, computed } from '@preact/signals';
 
-import data from '../data/geoData.json';
+import data from '../data/walkdata.json';
 
 // Signals
 

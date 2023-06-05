@@ -5,7 +5,7 @@ import {
 	convertArgs,
 	loadAndParse,
 	filterGeoJson
-} from './helpers/routeConverter_helpers.js';
+} from '../tools/helpers';
 
 import rootname from '../../rootname.js';
 
