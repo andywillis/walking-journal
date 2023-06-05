@@ -1,6 +1,6 @@
 import fs from 'fs/promises';
 
-const formatter = new Intl.DateTimeFormat('en-GB');
+export const formatter = new Intl.DateTimeFormat('en-GB');
 
 /**
  * convertArgs
