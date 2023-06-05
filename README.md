@@ -1,6 +1,6 @@
-# Walking Map
+# Walking Journal
 
-An early prototype map of my walks.
+An early prototype journal of my walks.
 
 https://quiet-douhua-784278.netlify.app/
 
