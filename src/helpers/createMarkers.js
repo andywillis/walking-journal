@@ -16,8 +16,6 @@ function createMarkers(data, darkMode) {
 			properties: { icons }
 		} = marker;
 	
-		console.log(darkMode, icons[darkMode ? 'dark' : 'light']);
-
 		const [ lng, lat ] = coordinates;
 	
 		return L.marker([ lat, lng ], {

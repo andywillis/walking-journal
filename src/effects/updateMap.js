@@ -7,12 +7,12 @@ import { createMarkers } from '../helpers';
 /**
  * updateMap
  *
- * Accepts a set of geodata, the current walk value,
+ * Accepts a set of geodata, the selected walk value,
  * the dark mode value, and the map reference, and uses that
  * information to add routes and markers to the map
  *
  * @param {object} geoData
- * @param {number} selectedWalk
+ * @param {string} selectedWalk
  * @param {boolean} darkMode
  * @param {object} mapRef
  */
@@ -22,7 +22,7 @@ function updateMap(walks, selectedWalk, darkMode, mapRef) {
 	if (visibleGroup.peek()) visibleGroup.peek().remove();
 
 	const walk = walks.find(obj => {
-		return obj.id === selectedWalk;
+		return obj.shortname === selectedWalk;
 	});
 
 	const route = L.geoJSON(walk.route, {

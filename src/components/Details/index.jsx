@@ -7,15 +7,10 @@ import {
 	walks,
 	totalWalks,
 	totalDistance,
-	totalJourneys,
-	selectedWalk
+	totalJourneys
 } from '../../signals';
 
 import style from './style.module.css';
-
-function handleWalk(id) {
-	selectedWalk.value = Number(id);
-}
 
 /**
  * Details
@@ -51,15 +46,10 @@ function Details() {
 				</header>
 				{walks.value.map(walk => {
 
-					const { id, name, distance, unit } = walk;
+					const { id, shortname, name, distance, unit } = walk;
 				
 					return (
-						<PanelItem
-							key={id}
-							id={id}
-							walkId={selectedWalk.value}
-							handleClick={handleWalk}
-						>
+						<PanelItem key={id} id={id} shortname={shortname}>
 							<span>{name}</span>
 							<span>{distance}{unit}</span>
 						</PanelItem>

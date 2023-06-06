@@ -1,0 +1,16 @@
+.main {
+	column-gap: var(--size-rem-md);
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	height: 100%;
+	row-gap: var(--size-rem-md);
+	width: 100%;
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 721px) {
+	.main {
+		flex-direction: row;
+	}
+}

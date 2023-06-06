@@ -18,7 +18,7 @@
 		"@babel/plugin-syntax-import-assertions": "^7.20.0",
 		"@preact/preset-vite": "^2.5.0",
 		"babel-preset-preact": "2.0.0",
-		"eslint": "^8.41.0",
+		"eslint": "^8.42.0",
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-plugin-import": "^2.27.5",
 		"eslint-plugin-jsx-a11y": "^6.7.1",
@@ -33,6 +33,7 @@
 		"classnames": "^2.3.2",
 		"leaflet": "1.9.4",
 		"open-props": "^1.5.8",
-		"preact": "^10.15.1"
+		"preact": "^10.15.1",
+		"preact-router": "4.1.1"
 	}
 }

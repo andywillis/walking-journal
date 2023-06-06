@@ -1,4 +1,4 @@
-import classNames from 'classnames';
+import { Link } from 'preact-router/match';
 
 import style from './style.module.css';
 
@@ -11,24 +11,17 @@ import style from './style.module.css';
 function PanelItem(props) {
 
 	const {
-		id,
-		walkId,
-		handleClick,
+		shortname,
 		children
 	} = props;
-	
-	const itemClass = classNames({
-		[style.item]: true,
-		[style.highlighted]: id === walkId
-	});
 
 	return (
-		<button
-			type="button"
-			class={itemClass}
-			onClick={() => handleClick(id)}
+		<Link
+			class={style.item}
+			activeClassName={style.active}
+			href={`/${shortname}`}
 		>{children}
-		</button>
+		</Link>
 	);
 
 }
