@@ -27,7 +27,7 @@
 
 }
 
-& .highlighted {
+& .active {
 	background-color: var(--theme-item-highlight-bg-color);
 	color: var(--theme-item-highlight-text-color);
 }

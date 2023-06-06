@@ -3,7 +3,7 @@ export { default as addPrologue } from './addPrologue.js';
 export { default as addRouteIcons } from './addRouteIcons.js';
 export { default as buildRouteObject } from './buildRouteObject.js';
 export { default as convertArgs } from './convertArgs.js';
-export { default as createAppRouteName } from './createAppRouteName.js';
+export { default as createshortname } from './createshortname.js';
 export { default as createNumberIcon } from './createNumberIcon.js';
 export { default as filterGeoJson } from './filterGeoJson.js';
 export { default as getFullWalkDistance } from './getFullWalkDistance.js';

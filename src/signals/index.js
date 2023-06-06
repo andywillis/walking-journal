@@ -8,11 +8,11 @@ export const darkMode = signal(false);
 
 export const store = signal(data);
 
-export const selectedWalk = signal(1);
-
 export const walks = computed(() => {
 	return store.value.walks;
 });
+
+export const selectedWalk = signal(store.value.walks[0].shortname);
 
 export const totalDistance = computed(() => {
 	const { totalDistance, unit } = store.value;

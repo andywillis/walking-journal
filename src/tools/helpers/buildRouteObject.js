@@ -1,4 +1,4 @@
-import createAppRouteName from './createAppRouteName.js';
+import createshortname from './createshortname.js';
 import formatter from './formatter.js';
 
 /**
@@ -19,7 +19,7 @@ function buildRouteObject(id, data, args) {
 	return {
 		id,
 		name,
-		appRouteTitle: createAppRouteName(name),
+		appRouteTitle: createshortname(name),
 		town,
 		county,
 		dates: [date],

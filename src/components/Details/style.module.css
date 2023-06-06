@@ -31,7 +31,7 @@
 
 @media (min-width: 721px) {
 	.details {
-    max-height: var(--viewport-width-100);
+    max-height: var(--viewport-height-100);
     max-width: var(--viewport-width-35);
     border-bottom: var(--theme-border-gray);
   

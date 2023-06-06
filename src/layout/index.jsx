@@ -1,8 +1,8 @@
-import { Details, Map } from '../components';
+import Router from 'preact-router';
+
+import { Main } from '../components';
 
 import useTheme from '../hooks/useTheme';
-
-import style from './style.module.css';
 
 /**
  * App
@@ -14,10 +14,9 @@ function App() {
 	useTheme();
 
 	return (
-		<main class={style.main}>
-			<Details />
-			<Map />
-		</main>
+		<Router>
+			<Main path="/:walk?" />
+		</Router>
 	);
 }
 

@@ -7,7 +7,7 @@
     {
       "id": 1,
       "name": "Pines to Fan Bay",
-      "appRouteName": "pines-to-fan-bay",
+      "shortname": "pines-to-fan-bay",
       "town": "St. Margaret's Bay",
       "county": "Kent",
       "dates": [
@@ -294,7 +294,7 @@
     {
       "id": 2,
       "name": "Sandwich Circuit",
-      "appRouteName": "sandwich-circuit",
+      "shortname": "sandwich-circuit",
       "town": "Sandwich",
       "county": "Kent",
       "dates": [
@@ -705,7 +705,7 @@
     {
       "id": 3,
       "name": "Fredville",
-      "appRouteName": "fredville",
+      "shortname": "fredville",
       "town": "Nonnington",
       "county": "Kent",
       "dates": [
@@ -1104,7 +1104,7 @@
     {
       "id": 4,
       "name": "Rope Walk",
-      "appRouteName": "rope-walk",
+      "shortname": "rope-walk",
       "town": "Sandwich",
       "county": "Kent",
       "dates": [
@@ -1272,7 +1272,7 @@
     {
       "id": 5,
       "name": "To Sandwich Bay",
-      "appRouteTitle": "to-sandwich-bay",
+      "shortname": "to-sandwich-bay",
       "town": "Sandwich",
       "county": "Kent",
       "dates": [

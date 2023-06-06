@@ -46,13 +46,13 @@ export function filterGeoJson(inputFile) {
 }
 
 /**
- * createAppRouteName
+ * createshortname
  *
  * @export
  * @param {String} name
  * @return {String}
  */
-export function createAppRouteName(name) {
+export function createshortname(name) {
 	return name.replace(/,'"\./, '').replaceAll(/\s/g, '-').toLowerCase();
 }
 
@@ -74,7 +74,7 @@ export function buildRouteObject(id, data, args) {
 	return {
 		id,
 		name,
-		appRouteTitle: createAppRouteName(name),
+		appRouteTitle: createshortname(name),
 		town,
 		county,
 		dates: [date],
