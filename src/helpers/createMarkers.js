@@ -9,22 +9,24 @@ import * as L from 'leaflet';
  */
 function createMarkers(data, darkMode) {
 
-	return data.map(marker => {
+	return data.map(markerData => {
 
 		const {
 			geometry: { coordinates },
-			properties: { icons }
-		} = marker;
+			properties: { icons, description }
+		} = markerData;
 	
 		const [ lng, lat ] = coordinates;
 	
-		return L.marker([ lat, lng ], {
+		const marker = L.marker([ lat, lng ], {
 			icon: L.divIcon({
 				html: icons[darkMode ? 'dark' : 'light'],
 				className: ''
 			})
-		});
+		}).bindPopup(description);
 	
+		return marker;
+
 	});
 
 }
