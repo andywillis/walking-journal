@@ -11,6 +11,9 @@ dependencies:
   classnames:
     specifier: ^2.3.2
     version: 2.3.2
+  geodesy:
+    specifier: 2.4.0
+    version: 2.4.0
   leaflet:
     specifier: 1.9.4
     version: 1.9.4
@@ -1730,6 +1733,11 @@ packages:
     resolution: {integrity: sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==}
     engines: {node: '>=6.9.0'}
     dev: true
+
+  /geodesy@2.4.0:
+    resolution: {integrity: sha512-tHjQ1sXq8UAIEg1V0Pa6mznUxGU0R+3H5PIF6NULr0yPCAVLKqJro93Bbr19jSE18BMfyjN4osWDI4sm92m0kw==}
+    engines: {node: '>=8.0.0'}
+    dev: false
 
   /get-intrinsic@1.2.1:
     resolution: {integrity: sha512-2DcsyfABl+gVHEfCOaTrWgyt+tb6MSEGmKq+kI5HwLbIYgjgmMcV8KQ41uaKz1xxUcn9tJtgFbQUEVcEbd0FYw==}
