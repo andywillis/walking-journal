@@ -33,6 +33,7 @@
 		"classnames": "^2.3.2",
 		"geodesy": "2.4.0",
 		"leaflet": "1.9.4",
+		"mapbox-gl": "2.15.0",
 		"open-props": "^1.5.8",
 		"preact": "^10.15.1",
 		"preact-router": "4.1.1"
