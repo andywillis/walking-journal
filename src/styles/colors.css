@@ -9,48 +9,59 @@
 	--green-0: hsl(var(--green-0-hsl));
 	--green-1: hsl(var(--green-1-hsl));
 	--green-2: hsl(var(--green-2-hsl));
+	--green-3: hsl(var(--green-3-hsl));
 	--green-4: hsl(var(--green-4-hsl));
 	--green-5: hsl(var(--green-5-hsl));
 	--green-6: hsl(var(--green-6-hsl));
 	--green-7: hsl(var(--green-7-hsl));
 	--green-8: hsl(var(--green-8-hsl));
+	--green-9: hsl(var(--green-9-hsl));
 	
 	--blue-0: hsl(var(--blue-0-hsl));
 	--blue-1: hsl(var(--blue-1-hsl));
 	--blue-2: hsl(var(--blue-2-hsl));
+	--blue-3: hsl(var(--blue-3-hsl));
 	--blue-4: hsl(var(--blue-4-hsl));
 	--blue-5: hsl(var(--blue-5-hsl));
 	--blue-6: hsl(var(--blue-6-hsl));
 	--blue-7: hsl(var(--blue-7-hsl));
 	--blue-8: hsl(var(--blue-8-hsl));
-	
+	--blue-9: hsl(var(--blue-9-hsl));
+
 	--gray-0: hsl(var(--gray-0-hsl));
 	--gray-1: hsl(var(--gray-1-hsl));
 	--gray-2: hsl(var(--gray-2-hsl));
+	--gray-3: hsl(var(--gray-3-hsl));
 	--gray-4: hsl(var(--gray-4-hsl));
 	--gray-5: hsl(var(--gray-5-hsl));
 	--gray-6: hsl(var(--gray-6-hsl));
 	--gray-7: hsl(var(--gray-7-hsl));
 	--gray-8: hsl(var(--gray-8-hsl));
+	--gray-9: hsl(var(--gray-9-hsl));
 	
 	--orange-0: hsl(var(--orange-0-hsl));
 	--orange-1: hsl(var(--orange-1-hsl));
 	--orange-2: hsl(var(--orange-2-hsl));
+	--orange-3: hsl(var(--orange-3-hsl));
 	--orange-4: hsl(var(--orange-4-hsl));
 	--orange-5: hsl(var(--orange-5-hsl));
 	--orange-6: hsl(var(--orange-6-hsl));
 	--orange-7: hsl(var(--orange-7-hsl));
 	--orange-8: hsl(var(--orange-8-hsl));
+	--orange-9: hsl(var(--orange-9-hsl));
 	
 	--yellow-0: hsl(var(--yellow-0-hsl));
 	--yellow-1: hsl(var(--yellow-1-hsl));
 	--yellow-2: hsl(var(--yellow-2-hsl));
+	--yellow-3: hsl(var(--yellow-3-hsl));
 	--yellow-4: hsl(var(--yellow-4-hsl));
 	--yellow-5: hsl(var(--yellow-5-hsl));
 	--yellow-6: hsl(var(--yellow-6-hsl));
 	--yellow-7: hsl(var(--yellow-7-hsl));
 	--yellow-8: hsl(var(--yellow-8-hsl));
+	--yellow-9: hsl(var(--yellow-9-hsl));
 
-	--map-dark: #303030;
+	/* --map-dark: #303030; */
+	--map-dark: var(--gray-8);
 
 }

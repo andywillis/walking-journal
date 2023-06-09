@@ -19,8 +19,8 @@
     margin-bottom: var(--size-rem-md);
     padding: var(--size-rem-sm) 0; 
 
-    & h4 {
-      font-size: var(--size-rem-lg);
+    & h2 {
+      font-size: calc(var(--size-rem-xl) * 0.8);
       margin: 0;
       text-transform: uppercase;
     }
@@ -37,8 +37,8 @@
   
     & .detailsHeader {
 
-      & h4 {
-        font-size: var(--size-rem-lg);
+      & h2 {
+        font-size: calc(var(--size-rem-lg) * 0.9);
       }
     
     }

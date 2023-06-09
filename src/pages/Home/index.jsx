@@ -1,8 +1,8 @@
 import { useEffect } from 'preact/hooks';
 import { route } from 'preact-router';
 
-import Details from '../Details';
-import Map from '../Map';
+import Details from '../../components/Details';
+import Map from '../../components/Map';
 
 import { selectedWalk, walks } from '../../signals';
 

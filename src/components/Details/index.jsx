@@ -1,4 +1,5 @@
-import DarkLightIcon from '../DarkLightIcon';
+import Icon from '../Icon';
+import IconGroup from '../IconGroup';
 import DetailsPanel from './DetailsPanel';
 import PanelItem from './PanelItem';
 import PanelPara from './PanelPara';
@@ -12,6 +13,10 @@ import {
 
 import style from './style.module.css';
 
+function handleDetails() {
+	console.log('Handle details');
+}
+
 /**
  * Details
  *
@@ -21,10 +26,10 @@ function Details() {
 	
 	return (
 		<section class={style.details}>
-			<DetailsPanel title="Walk Journal">
+			
+			<DetailsPanel>
 				<header class={style.detailsHeader}>
-					<h4>Walking Journal</h4>
-					<DarkLightIcon />
+					<h2>Details</h2>
 				</header>
 				<PanelPara>
 					<span>Total walks</span>
@@ -35,14 +40,21 @@ function Details() {
 					<span>{totalJourneys.value}</span>
 				</PanelPara>
 				<PanelPara>
-					<span>Total distance</span>
-					<span>{totalDistance.value.distance}{totalDistance.value.unit}</span>
+					<span>Total distance ({totalDistance.value.unit})</span>
+					<span>{totalDistance.value.distance}</span>
 				</PanelPara>
 			</DetailsPanel>
 
-			<DetailsPanel title="List of walks">
+			<DetailsPanel>
 				<header class={style.detailsHeader}>
-					<h4>List of walks</h4>
+					<h2>List of walks</h2>
+					<IconGroup>
+						<Icon
+							title="View walk details"
+							type="details"
+							handleClick={handleDetails}
+						/>
+					</IconGroup>
 				</header>
 				{walks.value.map(walk => {
 

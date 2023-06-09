@@ -5,9 +5,9 @@ import {
 	convertArgs,
 	loadAndParse,
 	filterGeoJson
-} from '../tools/helpers';
+} from '../src/tools/helpers';
 
-import rootname from '../../rootname.js';
+import rootname from '../rootname.js';
 
 const geoDataPath = `${rootname}/src/data`;
 const inputPath = `${rootname}/src/tools/input`;

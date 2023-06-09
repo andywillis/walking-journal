@@ -1,23 +1,28 @@
 import Router from 'preact-router';
 
-import { Main } from '../components';
+import { About, Home } from '../pages';
+import { Header } from '../components';
 
 import useTheme from '../hooks/useTheme';
 
 /**
- * App
+ * Layout
  *
  * @return {React.ReactElement}
  */
-function App() {
+function Layout() {
 
 	useTheme();
 
 	return (
-		<Router>
-			<Main path="/:walk?" />
-		</Router>
+		<>
+			<Header />
+			<Router>
+				<Home path="/:walk?" />
+				<About path="/about" />
+			</Router>
+		</>
 	);
 }
 
-export default App;
+export default Layout;
