@@ -1,12 +1,12 @@
 import { useEffect } from 'preact/hooks';
 import { route } from 'preact-router';
 
-import Details from '../Details';
-import Map from '../Map';
+import { Details, Map } from '../../components';
 
 import { selectedWalk, walks } from '../../signals';
 
 import style from './style.module.css';
+import useSelectedUrl from '../../hooks/useSelectedUrl';
 
 /**
  * Main
@@ -14,9 +14,11 @@ import style from './style.module.css';
  * @param {Object} props
  * @return {React.ReactElement}
  */
-function Main(props) {
+function Home(props) {
 	
-	const { matches: { walk } } = props;
+	const { url, matches: { walk } } = props;
+
+	useSelectedUrl(url);
 
 	useEffect(() => {
 		if (walk.length) {
@@ -28,11 +30,11 @@ function Main(props) {
 
 	return (
 		<main class={style.main}>
-			<Details walk={walk} />
-			<Map walk={walk} />
+			<Details />
+			<Map />
 		</main>
 	);
 
 }
 
-export default Main;
+export default Home;

@@ -12,7 +12,7 @@
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 650px) {
+@media (min-width: 721px) {
 	.para {
 		font-size: calc(var(--size-rem-lg) * 0.9);
 	}

@@ -1,5 +1,7 @@
 import { signal, computed } from '@preact/signals';
 
+import toTwoDecimalPlaces from '../helpers/toTwoDecimalPlaces';
+
 import data from '../data/walkdata.json';
 
 // Signals
@@ -14,9 +16,20 @@ export const walks = computed(() => {
 
 export const selectedWalk = signal(store.value.walks[0].shortname);
 
+export const selectedUrl = signal(undefined);
+
 export const totalDistance = computed(() => {
-	const { totalDistance, unit } = store.value;
-	return { distance: totalDistance, unit };
+	
+	const { walks, unit } = store.value;
+	
+	const distance = walks.reduce((acc, walk) => {
+		const { distance, dates } = walk;
+		acc += (distance * dates.length);
+		return acc;
+	}, 0);
+	
+	return { distance: toTwoDecimalPlaces(distance), unit };
+
 });
 
 export const totalWalks = computed(() => {

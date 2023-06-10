@@ -3,7 +3,7 @@
 	display: flex;
 	flex: 1;
 	flex-direction: column;
-	height: 100%;
+	max-height: 90vh;
 	row-gap: var(--size-rem-md);
 	width: 100%;
 }

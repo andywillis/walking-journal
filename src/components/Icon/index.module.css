@@ -12,24 +12,52 @@
 		cursor: pointer;
 	}
 
-	&.light {
+	&.darklight.light {
 		background-image: url('../../assets/images/moon.png');
 	}
 
-	&.dark {
+	&.darklight.dark {
 		background-image: url('../../assets/images/sun_neg.png');
 	}
 
-	&.light:hover {
+	&.details.light {
+		background-image: url('../../assets/images/details.png');
+	}
+
+	&.details.dark {
+		background-image: url('../../assets/images/details_neg.png');
+	}
+
+	&.info.light {
+		background-image: url('../../assets/images/about.png');
+	}
+
+	&.info.dark {
+		background-image: url('../../assets/images/about_neg.png');
+	}
+
+	&.home.light {
+		background-image: url('../../assets/images/home.png');
+	}
+
+	&.home.dark {
+		background-image: url('../../assets/images/home_neg.png');
+	}
+
+	&.light:not(:disabled):hover {
 		background-color: var(--gray-2);
 	}
 
-	&.dark:hover {
+	&.dark:not(:disabled):hover {
 		background-color: var(--gray-7);
 	}
 
 	&:disabled {
 		opacity: 0.2;
+	}
+
+	& + .icon {
+		margin-left: var(--size-px-5);
 	}
 	
 }

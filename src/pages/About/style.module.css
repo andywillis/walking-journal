@@ -1,0 +1,11 @@
+.about { 
+	margin: var(--size-rem-xl);
+	font-size: calc(var(--size-rem-xl) * 0.9);
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 721px) {
+	.about {
+		font-size: var(--size-rem-lg);
+	}
+}
