@@ -29,18 +29,26 @@
 	}
 
 	&.info.light {
-		background-image: url('../../assets/images/info.png');
+		background-image: url('../../assets/images/about.png');
 	}
 
 	&.info.dark {
-		background-image: url('../../assets/images/info_neg.png');
+		background-image: url('../../assets/images/about_neg.png');
 	}
 
-	&.light:hover {
+	&.home.light {
+		background-image: url('../../assets/images/home.png');
+	}
+
+	&.home.dark {
+		background-image: url('../../assets/images/home_neg.png');
+	}
+
+	&.light:not(:disabled):hover {
 		background-color: var(--gray-2);
 	}
 
-	&.dark:hover {
+	&.dark:not(:disabled):hover {
 		background-color: var(--gray-7);
 	}
 

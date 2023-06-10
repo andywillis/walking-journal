@@ -1,6 +1,13 @@
-import { Link } from 'preact-router/match';
+import { route } from 'preact-router';
+
+import { selectedWalk } from '../../../signals';
 
 import style from './style.module.css';
+
+function handleClick(e) {
+	const { href } = e.target.dataset;
+	route(href);
+}
 
 /**
  * PanelItem
@@ -15,13 +22,21 @@ function PanelItem(props) {
 		children
 	} = props;
 
+	const cn = [
+		style.item,
+		selectedWalk.value === shortname && style.active
+	].join(' ');
+
 	return (
-		<Link
-			class={style.item}
-			activeClassName={style.active}
-			href={`/${shortname}`}
+		<button
+			type="button"
+			class={cn}
+			data-href={`/${shortname}`}
+			// activeClassName={style.active}
+			// href={`/${shortname}`}
+			onClick={handleClick}
 		>{children}
-		</Link>
+		</button>
 	);
 
 }

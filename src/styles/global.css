@@ -39,7 +39,7 @@
 	--theme-item-text-color: var(--gray-8);
 	--theme-anchor-color: var(--blue-8);
 
-	& .anchor {
+	& a {
 		color: var(--theme-anchor-color);
 		text-decoration: underline var(--theme-anchor-color);
 	}
@@ -68,7 +68,7 @@
 		filter: var(--leaflet-tile-filter, none);
 	}
 
-	& .anchor {
+	& a {
 		color: var(--theme-anchor-color);
 		text-decoration: underline var(--theme-anchor-color);
 	}

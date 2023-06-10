@@ -61,7 +61,11 @@ function Details() {
 					const { id, shortname, name, distance, unit } = walk;
 				
 					return (
-						<PanelItem key={id} id={id} shortname={shortname}>
+						<PanelItem
+							key={id}
+							id={id}
+							shortname={shortname}
+						>
 							<span>{name}</span>
 							<span>{distance}{unit}</span>
 						</PanelItem>

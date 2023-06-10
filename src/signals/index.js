@@ -16,6 +16,8 @@ export const walks = computed(() => {
 
 export const selectedWalk = signal(store.value.walks[0].shortname);
 
+export const selectedUrl = signal(undefined);
+
 export const totalDistance = computed(() => {
 	
 	const { walks, unit } = store.value;

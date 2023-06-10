@@ -10,7 +10,7 @@ import style from './index.module.css';
  * @param {Object} { type, handleClick }
  * @return {React.ReactElement}
  */
-function Icon({ title, type, handleClick }) {
+function Icon({ title, type, handleClick, disabled = false }) {
 
 	const cn = classNames([
 		style.icon,
@@ -24,6 +24,7 @@ function Icon({ title, type, handleClick }) {
 			type="button"
 			class={cn}
 			onClick={handleClick}
+			disabled={disabled}
 		/>
 	);
 
