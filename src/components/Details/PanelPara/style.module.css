@@ -1,6 +1,6 @@
 .para {
 	
-	color: var(--theme-item-text-color);
+	color: var(--theme-item-color-text);
 	display: flex;
 	font-size: calc(var(--size-rem-lg) * 1.3);
 	margin: var(--size-rem-sm) 0;

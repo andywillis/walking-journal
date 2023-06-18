@@ -1,7 +1,6 @@
 .details {
   
-  border: var(--theme-border-gray);
-	border-bottom-color: var(--gray-4);
+  border: var(--theme-border-general);
   border-radius: var(--size-px-5);
   display: flex;
   flex-direction: column;
@@ -14,10 +13,10 @@
 
   & .detailsHeader {
     align-items: center;
-    border-bottom: var(--theme-border-blue);
+    border-bottom: var(--theme-border-separator);
     display: flex;
     margin-bottom: var(--size-rem-md);
-    padding: var(--size-rem-sm) 0; 
+    padding: var(--size-rem-sm) 0;
 
     & h2 {
       font-size: calc(var(--size-rem-xl) * 0.8);
@@ -33,7 +32,7 @@
 	.details {
     max-height: var(--viewport-height-100);
     max-width: var(--viewport-width-35);
-    border-bottom: var(--theme-border-gray);
+    border-bottom: var(--theme-border-general);
   
     & .detailsHeader {
 

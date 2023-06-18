@@ -1,9 +1,9 @@
 .icon {
-	background-size: 16px 16px;
+	background-size: var(--size-px-16) var(--size-px-16);
 	background-repeat: no-repeat;
 	background-position: center center;
-	width: 32px;
-	height: 32px;
+	width: var(--size-px-32);
+	height: var(--size-px-32);
 	margin-left: auto;
 	background-color: transparent;
 	border-radius: var(--size-px-5);
@@ -66,7 +66,7 @@
 @media (min-width: 650px) {
 	.icon {
 		background-size: 22px 22px;
-		width: 36px;
-		height: 36px;
+		width: var(--size-px-36);
+		height: var(--size-px-36);
 	}
 }

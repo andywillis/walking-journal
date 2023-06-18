@@ -6,10 +6,9 @@
 	margin-bottom: var(--size-rem-sm);
 
 	& h1 {
-		color: var(--theme-item-text-color);
-		text-decoration: underline var(--theme-item-text-color);
-		font-size: 1.4rem;
-		line-height: 1.4;
+		color: var(--theme-item-color-text);
+		text-decoration: underline var(--theme-item-color-text);
+		font-size: var(--size-rem-xl);
 		padding: 0;
 		margin: 0;
 	}
