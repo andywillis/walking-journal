@@ -1,6 +1,6 @@
 .mapContainer {
 	
-	border: var(--theme-border-gray);
+	border: var(--theme-border-general);
 	border-radius: var(--size-px-5);
 	display: flex;
 	flex: 1;
