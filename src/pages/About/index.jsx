@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import useSelectedUrl from '../../hooks/useSelectedUrl';
+
 import style from './style.module.css';
 
 /**
@@ -7,10 +7,7 @@ import style from './style.module.css';
  *
  * @return {React.ReactElement}
  */
-function About({ url }) {
-	
-	useSelectedUrl(url);
-	
+function About() {
 	return (
 		<main class={style.about}>
 			<p>With this small site I wanted to be able to view - both in written detail, and on a map - the journeys I have taken on various walks around Kent.</p>

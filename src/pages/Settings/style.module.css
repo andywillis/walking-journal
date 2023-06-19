@@ -1,0 +1,29 @@
+.settings { 
+	margin: var(--size-rem-xl);
+	font-size: calc(var(--size-rem-xl) * 0.9);
+
+	& fieldset {
+		
+		& label {
+
+			&:not(:first-child) {
+				margin-left: var(--size-rem-lg);
+			}
+
+			& input {
+				width: var(--size-rem-lg);
+				height: var(--size-rem-lg);
+			}
+
+		}
+
+	}
+
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 721px) {
+	.settings {
+		font-size: var(--size-rem-lg);
+	}
+}

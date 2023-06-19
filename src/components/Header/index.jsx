@@ -1,21 +1,21 @@
-import { Link, route } from 'preact-router';
+import { Link } from 'preact-router/match';
 
-import Icon from '../Icon';
-import IconGroup from '../IconGroup';
+// import Icon from '../Icon';
+import Nav from '../IconGroup';
 
-import { selectedUrl, darkMode } from '../../signals';
+// import { selectedUrl, themeMode } from '../../signals';
 
 import style from './style.module.css';
 
-function handleDarkLightMode() {
-	darkMode.value = !darkMode.peek();
-}
+// function handleDarkLightMode() {
+// 	themeMode.value = themeMode.peek() === 'dark' ? 'light' : 'dark';
+// }
 
-function handleClick(path) {
-	route(path);
-}
+// function handleClick(path) {
+// 	route(path);
+// }
 
-const notHomeRoutes = ['/about'];
+// const notHomeRoutes = ['/about'];
 
 /**
  * Header
@@ -26,25 +26,43 @@ function Header() {
 	return (
 		<header class={style.header}>
 			<Link href="/"><h1>Walking Journal</h1></Link>
-			<IconGroup>
-				<Icon
+			<Nav>
+				{/* <Link
+					href="/"
+					class={style.anchor}
+					activeClassName={style.active}
+				>Home
+				</Link> */}
+				<Link
+					href="/about"
+					class={style.anchor}
+					activeClassName={style.active}
+				>About
+				</Link>
+				{/* <Icon
 					title="Home"
 					type="home"
 					handleClick={() => handleClick('/')}
 					disabled={!notHomeRoutes.includes(selectedUrl.value)}
-				/>
-				<Icon
+				/> */}
+				<Link
+					href="/settings"
+					class={style.anchor}
+					activeClassName={style.active}
+				>Settings
+				</Link>
+				{/* <Icon
 					title="Information"
 					type="info"
 					handleClick={() => handleClick('/about')}
 					disabled={selectedUrl.value === '/about'}
-				/>
-				<Icon
+				/> */}
+				{/* <Icon
 					title="Toggle dark/light mode"
 					type="darklight"
 					handleClick={handleDarkLightMode}
-				/>
-			</IconGroup>
+				/> */}
+			</Nav>
 		</header>
 	);
 }

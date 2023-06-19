@@ -1,4 +1,4 @@
-import { darkMode } from '../signals';
+import { themeMode } from '../signals';
 
 /**
  * useTheme
@@ -7,7 +7,7 @@ import { darkMode } from '../signals';
  *
  */
 function useTheme() {
-	document.documentElement.className = darkMode.value ? 'dark' : 'light';
+	document.documentElement.className = themeMode.value;
 }
 
 export default useTheme;

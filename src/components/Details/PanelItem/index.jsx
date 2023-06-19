@@ -1,13 +1,6 @@
-import { route } from 'preact-router';
-
-import { selectedWalk } from '../../../signals';
+import { Link } from 'preact-router/match';
 
 import style from './style.module.css';
-
-function handleClick(e) {
-	const { href } = e.target.dataset;
-	route(href);
-}
 
 /**
  * PanelItem
@@ -15,30 +8,15 @@ function handleClick(e) {
  * @param {object} props
  * @return {React.ReactElement}
  */
-function PanelItem(props) {
-
-	const {
-		shortname,
-		children
-	} = props;
-
-	const cn = [
-		style.item,
-		selectedWalk.value === shortname && style.active
-	].join(' ');
-
+function PanelItem({ shortname, children }) {
 	return (
-		<button
-			type="button"
-			class={cn}
-			data-href={`/${shortname}`}
-			// activeClassName={style.active}
-			// href={`/${shortname}`}
-			onClick={handleClick}
+		<Link
+			href={`/${shortname}`}
+			class={style.item}
+			activeClassName={style.active}
 		>{children}
-		</button>
+		</Link>
 	);
-
 }
 
 export default PanelItem;

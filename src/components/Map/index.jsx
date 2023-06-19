@@ -3,7 +3,7 @@ import { effect } from '@preact/signals';
 
 import * as L from 'leaflet';
 
-import { walks, selectedWalk, darkMode } from '../../signals';
+import { walks, selectedWalk, themeMode } from '../../signals';
 
 import updateMap from '../../effects/updateMap';
 
@@ -43,10 +43,10 @@ function Map() {
 		effect(() => updateMap(
 			walks.peek(),
 			selectedWalk.value,
-			darkMode.value,
+			themeMode.value,
 			mapRef
 		));
-
+	
 	}, []);
 
 	return (

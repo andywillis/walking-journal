@@ -1,16 +1,22 @@
 import classNames from 'classnames';
 
-import { themeMode } from '../../signals';
-
 import style from './index.module.css';
 
 /**
- * Icon
+ * NavItem
  *
  * @param {Object} { type, handleClick }
  * @return {React.ReactElement}
  */
-function Icon({ title, type, handleClick, disabled = false }) {
+function NavItem(props) {
+
+	const {
+		title,
+		type,
+		handleClick,
+		disabled = false,
+		themeMode
+	} = props;
 
 	const cn = classNames([
 		style.icon,
@@ -30,4 +36,4 @@ function Icon({ title, type, handleClick, disabled = false }) {
 
 }
 
-export default Icon;
+export default NavItem;

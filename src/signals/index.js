@@ -6,7 +6,7 @@ import data from '../data/walkdata.json';
 
 // Signals
 
-export const darkMode = signal(false);
+export const themeMode = signal('light');
 
 export const store = signal(data);
 
@@ -15,8 +15,6 @@ export const walks = computed(() => {
 });
 
 export const selectedWalk = signal(store.value.walks[0].shortname);
-
-export const selectedUrl = signal(undefined);
 
 export const totalDistance = computed(() => {
 	

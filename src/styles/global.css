@@ -68,7 +68,7 @@
 	--theme-item-color-text: var(--gray-1);
 
 	/* Anchor */
-	--theme-anchor-color: var(--orange-3);
+	--theme-anchor-color: var(--blue-1);
 
 	.leaflet-container {
 		background-color: var(--map-dark);

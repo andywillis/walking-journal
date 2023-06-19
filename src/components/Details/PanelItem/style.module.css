@@ -26,11 +26,11 @@
 		background-color: var(--theme-item-color-bg-highlight);
 	}
 
-}
+	&.active {
+		background-color: var(--theme-item-color-bg-highlight);
+		color: var(--theme-item-color-text-highlight);
+	}	
 
-& .active {
-	background-color: var(--theme-item-color-bg-highlight);
-	color: var(--theme-item-color-text-highlight);
 }
 
 /* Tablet and Smaller Desktop */
