@@ -1,5 +1,3 @@
-// import Icon from '../Icon';
-// import IconGroup from '../IconGroup';
 import DetailsPanel from './DetailsPanel';
 import PanelItem from './PanelItem';
 import PanelPara from './PanelPara';
@@ -12,10 +10,6 @@ import {
 } from '../../signals';
 
 import style from './style.module.css';
-
-// function handleDetails() {
-// 	console.log('Handle details');
-// }
 
 /**
  * Details
@@ -48,13 +42,6 @@ function Details() {
 			<DetailsPanel>
 				<header class={style.detailsHeader}>
 					<h2>List of walks</h2>
-					{/* <IconGroup>
-						<Icon
-							title="View walk details"
-							type="details"
-							handleClick={handleDetails}
-						/>
-					</IconGroup> */}
 				</header>
 				{walks.value.map(walk => {
 
