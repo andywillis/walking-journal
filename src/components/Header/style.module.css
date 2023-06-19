@@ -13,4 +13,18 @@
 		margin: 0;
 	}
 
+	& .anchor {
+		padding: var(--size-rem-sm) var(--size-rem-md);
+
+		&:not(:first-child) {
+			margin-left: var(--size-rem-sm);
+		}
+
+		&.active {
+			background-color: var(--theme-item-color-bg-highlight);
+			color: var(--theme-item-color-text-highlight);
+		}
+	
+	}
+
 }

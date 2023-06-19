@@ -1,0 +1,72 @@
+.icon {
+	background-size: var(--size-px-16) var(--size-px-16);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: var(--size-px-32);
+	height: var(--size-px-32);
+	margin-left: auto;
+	background-color: transparent;
+	border-radius: var(--size-px-5);
+	
+	&:hover:not(:disabled) {
+		cursor: pointer;
+	}
+
+	&.darklight.light {
+		background-image: url('../../assets/images/moon.png');
+	}
+
+	&.darklight.dark {
+		background-image: url('../../assets/images/sun_neg.png');
+	}
+
+	&.details.light {
+		background-image: url('../../assets/images/details.png');
+	}
+
+	&.details.dark {
+		background-image: url('../../assets/images/details_neg.png');
+	}
+
+	&.info.light {
+		background-image: url('../../assets/images/about.png');
+	}
+
+	&.info.dark {
+		background-image: url('../../assets/images/about_neg.png');
+	}
+
+	&.home.light {
+		background-image: url('../../assets/images/home.png');
+	}
+
+	&.home.dark {
+		background-image: url('../../assets/images/home_neg.png');
+	}
+
+	&.light:not(:disabled):hover {
+		background-color: var(--gray-2);
+	}
+
+	&.dark:not(:disabled):hover {
+		background-color: var(--gray-7);
+	}
+
+	&:disabled {
+		opacity: 0.2;
+	}
+
+	& + .icon {
+		margin-left: var(--size-px-5);
+	}
+	
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 650px) {
+	.icon {
+		background-size: 22px 22px;
+		width: var(--size-px-36);
+		height: var(--size-px-36);
+	}
+}

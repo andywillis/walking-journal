@@ -1,6 +1,6 @@
 import Router from 'preact-router';
 
-import { About, Home } from '../pages';
+import { About, Home, Settings } from '../pages';
 import { Header } from '../components';
 
 import useTheme from '../hooks/useTheme';
@@ -20,6 +20,7 @@ function Layout() {
 			<Router>
 				<Home path="/:walk?" />
 				<About path="/about" />
+				<Settings path="/settings" />
 			</Router>
 		</>
 	);

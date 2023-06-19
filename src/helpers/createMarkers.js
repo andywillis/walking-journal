@@ -6,10 +6,10 @@ import geoGraphIcon from '../assets/images/icons/geograph.ico';
  * createMarkers
  *
  * @param {array} data
- * @param {boolean} darkMode
+ * @param {boolean} themeMode
  * @return {array}
  */
-function createMarkers(data, darkMode) {
+function createMarkers(data, themeMode) {
 
 	return data.map(markerData => {
 
@@ -22,7 +22,7 @@ function createMarkers(data, darkMode) {
 	
 		const marker = L.marker([ lat, lng ], {
 			icon: L.divIcon({
-				html: icons[darkMode ? 'dark' : 'light'],
+				html: icons[themeMode],
 				className: ''
 			}),
 			title: name,

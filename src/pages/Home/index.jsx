@@ -1,12 +1,11 @@
-import { useEffect } from 'preact/hooks';
 import { route } from 'preact-router';
+import { useEffect } from 'preact/hooks';
 
 import { Details, Map } from '../../components';
 
 import { selectedWalk, walks } from '../../signals';
 
 import style from './style.module.css';
-import useSelectedUrl from '../../hooks/useSelectedUrl';
 
 /**
  * Main
@@ -16,16 +15,32 @@ import useSelectedUrl from '../../hooks/useSelectedUrl';
  */
 function Home(props) {
 	
-	const { url, matches: { walk } } = props;
-
-	useSelectedUrl(url);
+	const { matches: { walk } } = props;
 
 	useEffect(() => {
-		if (walk.length) {
-			selectedWalk.value = walk;
-		} else {
-			route(`/${walks.value[0].shortname}`, true);
+		
+		// If the URL contains a walk set the new state
+		// to the walk
+		if (walk.length) selectedWalk.value = walk;
+		
+		// If there is no walk (URL is "/")
+		if (!walk.length) {
+
+			// If there is no current selected walk
+			if (selectedWalk.peek()) {
+
+				// If there is an existing selected walk route to that
+				// This condition is used to route the home page back to
+				// the previous selected route from a nav route
+				route(selectedWalk.peek());
+
+			} else {
+				
+				// Otherwise route to the first available walk
+				route(`/${walks.peek()[0].shortname}`, true);
+			}
 		}
+	
 	}, [walk]);
 
 	return (
