@@ -3,9 +3,9 @@ import { effect } from '@preact/signals';
 
 import * as L from 'leaflet';
 
-import { walks, selectedWalk, themeMode } from '../../signals';
+import { walks, selectedWalk, themeMode, visibleGroup } from '../../store';
 
-import updateMap from '../../effects/updateMap';
+import updateMap from '../../helpers/updateMap';
 
 import 'leaflet/dist/leaflet.css';
 import style from './style.module.css';
@@ -41,9 +41,10 @@ function Map() {
 		// Signals effect that updates the map by
 		// adding subscriptions to various signal values
 		effect(() => updateMap(
-			walks.peek(),
-			selectedWalk.value,
-			themeMode.value,
+			walks,
+			visibleGroup,
+			selectedWalk,
+			themeMode,
 			mapRef
 		));
 	

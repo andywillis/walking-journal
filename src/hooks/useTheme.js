@@ -1,4 +1,4 @@
-import { themeMode } from '../signals';
+import { themeMode } from '../store';
 
 /**
  * useTheme

@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 
-import { themeMode } from '../../signals';
+import { themeMode } from '../../store';
 
 import style from './style.module.css';
 

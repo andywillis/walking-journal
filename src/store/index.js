@@ -1,20 +1,22 @@
-import { signal, computed } from '@preact/signals';
+import { effect, signal, computed } from '@preact/signals';
 
-import toTwoDecimalPlaces from '../helpers/toTwoDecimalPlaces';
+import { toTwoDecimalPlaces } from '../helpers';
 
 import data from '../data/walkdata.json';
 
 // Signals
 
-export const themeMode = signal('light');
+export const themeMode = signal(localStorage.getItem('theme') || 'light');
 
 export const store = signal(data);
 
-export const walks = computed(() => {
-	return store.value.walks;
-});
+export const walks = signal(store.value.walks);
 
-export const selectedWalk = signal(store.value.walks[0].shortname);
+export const selectedWalk = signal(walks.value[0].shortname);
+
+export const visibleGroup = signal(undefined);
+
+// Computed
 
 export const totalDistance = computed(() => {
 	
@@ -41,4 +43,8 @@ export const totalJourneys = computed(() => {
 	}, 0);
 });
 
-export const visibleGroup = signal(undefined);
+// Effects
+
+effect(() => {
+	localStorage.setItem('theme', themeMode.value);
+});
