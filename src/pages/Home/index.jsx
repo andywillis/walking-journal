@@ -3,7 +3,7 @@ import { useEffect } from 'preact/hooks';
 
 import { Details, Map } from '../../components';
 
-import { selectedWalk, walks } from '../../signals';
+import { selectedWalk, walks } from '../../store';
 
 import style from './style.module.css';
 

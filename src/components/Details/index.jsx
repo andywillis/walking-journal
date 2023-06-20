@@ -7,7 +7,7 @@ import {
 	totalWalks,
 	totalDistance,
 	totalJourneys
-} from '../../signals';
+} from '../../store';
 
 import style from './style.module.css';
 

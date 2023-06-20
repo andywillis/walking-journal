@@ -1,8 +1,6 @@
 import * as L from 'leaflet';
 
-import { visibleGroup } from '../signals';
-
-import { createMarkers } from '../helpers';
+import createMarkers from './createMarkers';
 
 /**
  * updateMap
@@ -16,13 +14,13 @@ import { createMarkers } from '../helpers';
  * @param {boolean} themeMode
  * @param {object} mapRef
  */
-function updateMap(walks, selectedWalk, themeMode, mapRef) {
+function updateMap(walks, visibleGroup, selectedWalk, themeMode, mapRef) {
 
 	// Remove the visible group
 	if (visibleGroup.peek()) visibleGroup.peek().remove();
 
-	const walk = walks.find(obj => {
-		return obj.shortname === selectedWalk;
+	const walk = walks.peek().find(obj => {
+		return obj.shortname === selectedWalk.value;
 	});
 
 	const route = L.geoJSON(walk.route, {
@@ -36,12 +34,12 @@ function updateMap(walks, selectedWalk, themeMode, mapRef) {
 	const group = L.featureGroup([route]);
 
 	if (walk.landmarkMarkers) {
-		const landmarkMarkers = createMarkers(walk.landmarkMarkers.features, themeMode);
+		const landmarkMarkers = createMarkers(walk.landmarkMarkers.features, themeMode.value);
 		landmarkMarkers.forEach(marker => marker.addTo(group));
 	}
 
 	if (walk.routeMarkers) {
-		const routeMarkers = createMarkers(walk.routeMarkers.features, themeMode);
+		const routeMarkers = createMarkers(walk.routeMarkers.features, themeMode.value);
 		routeMarkers.forEach(marker => marker.addTo(group));
 	}
 
